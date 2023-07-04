@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="robots" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="csrf-token" content="Fsr6GNPiZQyL6yLwdANKyyZBVafWJZziwN1ZlqP7">
+	<meta name="description" content="Some description for the page" />
+	<meta property="og:title" content="Zenix - Crypto Laravel Admin Dashboard" />
+	<meta property="og:description" content="Zenix | Widget" />
+	<meta property="og:image" content="../social-image.png" />
+	<meta name="format-detection" content="telephone=no">
+	<title>Zenix | Widget</title>
+	<!-- Favicon icon -->
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<link rel="icon" type="image/png" sizes="16x16" href="public/images/favicon.png">
+
+
+	<link href="public/vendor/chartist/css/chartist.min.css" rel="stylesheet" type="text/css" />
+
+
+
+
+	<link href="public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
+	<link href="public/css/style.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+
+	<!--*******************
+        Preloader start
+    ********************-->
+	<div id="preloader">
+		<div class="sk-three-bounce">
+			<div class="sk-child sk-bounce1"></div>
+			<div class="sk-child sk-bounce2"></div>
+			<div class="sk-child sk-bounce3"></div>
+		</div>
+	</div>
+	<!--*******************
+        Preloader end
+    ********************-->
+
+
+	<!--**********************************
+        Main wrapper start
+    ***********************************-->
+	<div id="main-wrapper">
+
+		<!--**********************************
+            Nav header start
+        ***********************************-->
+		<div class="nav-header">
+			<a href="index.html" class="brand-logo">
+				<img src="public/images/Untitled-2.jpg" alt="" class="img-fluid">
+			</a>
+
+			<div class="nav-control">
+				<div class="hamburger">
+					<span class="line"></span><span class="line"></span><span class="line"></span>
+				</div>
+			</div>
+		</div>
+		<!--**********************************
+            Nav header end
+        ***********************************-->
+
+		<!--**********************************
+            Header start
+        ***********************************-->
+
+		<!--**********************************
+    Chat box start
+***********************************-->
+		<div class="chatbox">
+			<div class="chatbox-close"></div>
+			<div class="custom-tab-1">
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="tab" href="#notes">Notes</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="tab" href="#alerts">Alerts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" data-bs-toggle="tab" href="#chat">Chat</a>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+		<!--**********************************
+    Chat box End
+***********************************-->
+
+
+
+
+		<!--**********************************
+    Header start
+***********************************-->
+		<div class="header">
+			<div class="header-content">
+				<nav class="navbar navbar-expand">
+					<div class="collapse navbar-collapse justify-content-between">
+						<div class="header-left">
+							<div class="input-group search-area right d-lg-inline-flex d-none">
+								<input type="text" class="form-control" placeholder="Find something here...">
+								<div class="input-group-append">
+									<span class="input-group-text">
+										<a href="javascript:void(0)">
+											<i class="flaticon-381-search-2"></i>
+										</a>
+									</span>
+								</div>
+							</div>
+						</div>
+						<ul class="navbar-nav header-right main-notification">
+							<li class="nav-item dropdown notification_dropdown">
+								<a class="nav-link bell dz-theme-mode" href="#">
+									<i id="icon-light" class="fas fa-sun"></i>
+									<i id="icon-dark" class="fas fa-moon"></i>
+								</a>
+							</li>
+							<li class="nav-item dropdown notification_dropdown">
+								<a class="nav-link bell dz-fullscreen" href="#">
+									<svg id="icon-full" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor"
+										stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+										class="css-i6dzq1">
+										<path
+											d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"
+											style="stroke-dasharray: 37, 57; stroke-dashoffset: 0;"></path>
+									</svg>
+									<svg id="icon-minimize" width="20" height="20" viewBox="0 0 24 24" fill="none"
+										stroke="currentColor" stroke-width="2" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-minimize">
+										<path
+											d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"
+											style="stroke-dasharray: 37, 57; stroke-dashoffset: 0;"></path>
+									</svg>
+								</a>
+							</li>
+							
+							<li class="nav-item dropdown header-profile">
+								<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
+									<img src="https://dev.digitalupseba.com/storage/app/DATA/SIGNATUREAPIDATAFILES/PHOTOS/5111616404.jpg"
+										width="20" alt="" />
+									<div class="header-info">
+										<span>Mehedi Hasan</span>
+										<small>Super Admin</small>
+									</div>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="app-profile.html" class="dropdown-item ai-icon">
+										<svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary"
+											width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+											stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+											<circle cx="12" cy="7" r="4"></circle>
+										</svg>
+										<span class="ms-2">Profile </span>
+									</a>
+									<a href="email-inbox.html" class="dropdown-item ai-icon">
+										<svg id="icon-inbox" xmlns="http://www.w3.org/2000/svg" class="text-success"
+											width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+											stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path
+												d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+											</path>
+											<polyline points="22,6 12,13 2,6"></polyline>
+										</svg>
+										<span class="ms-2">Inbox </span>
+									</a>
+									<a href="page-login.html" class="dropdown-item ai-icon">
+										<svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger"
+											width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+											stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+											<polyline points="16 17 21 12 16 7"></polyline>
+											<line x1="21" y1="12" x2="9" y2="12"></line>
+										</svg>
+										<span class="ms-2">Logout </span>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div class="sub-header">
+					<div class="d-flex align-items-center flex-wrap me-auto">
+						<h5 class="dashboard_bar">
+							Super Admin </h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--**********************************
+    Header end ti-comment-alt
+***********************************-->
+
+		<!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+		<!--**********************************
+            Sidebar start
+        ***********************************-->
+		<!--**********************************
+	Sidebar start
+***********************************-->
+		<div class="deznav">
+			<div class="deznav-scroll">
+				<div class="main-profile">
+					<div class="image-bx">
+						<img src="public/images/Untitled-1.jpg" alt="">
+					</div>
+					<h5 class="name"><span class="font-w400"></span> মেহেদী হাসান</h5>
+					<p class="email">info@digitalupseba.com</p>
+				</div>
+				<ul class="metismenu" id="menu">
+					<li class="nav-label first">Main Menu</li>
+					<li>
+						<a class="" href="index.html" aria-expanded="false">
+							<i class="uil uil-house-user"></i>
+							ড্যাশবোর্ড
+						</a>
+					</li>
+					<li class="nav-label">সেবা বক্স</li>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="flaticon-077-menu-1"></i>
+							<span class="nav-text">Nid Verification</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="nidVerify.htm">যাচাই</a></li>
+							<li><a href="nid-register.html">রেজিষ্টার</a></li>
+						</ul>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-edit-alt"></i>
+							<span class="nav-text">সহজ আবেদন</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="link.html">লিংক সমূহ</a></li>
+						</ul>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-money-bill"></i>
+							<span class="nav-text">হোল্ডিং ট্যাক্স</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="new-assment.html">নতুন এসেসমেন্ট নিবন্ধন</a></li>
+							<li><a href="assment-list.html">নিবন্ধন কৃত তালিকা</a></li>
+							<li><a href="collection-list.html">হোল্ডিং ট্যাক্স আদায়</a></li>
+							<li><a href="house-list.html">বাসা নির্বাচন</a></li>
+						</ul>
+					</li>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-list-ui-alt"></i>
+							<span class="nav-text">ত্রাণের তালিকা</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="entry-tran.html">সুবিধাভোগী নিবন্ধন</a></li>
+							<li><a href="list-tran.html">তালিকা তৈরি</a></li>
+							<li><a href="register-tran.html">রেজিষ্টার</a></li>
+							<li><a href="print-tranlist.html">তালিকা প্রিন্ট</a></li>
+						</ul>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-map-pin-alt"></i>
+							<span class="nav-text">প্রতিষ্ঠানের ঠিকানা</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="village-list.html">গ্রামের তালিকা</a></li>
+							<li><a href="postoffice-list.html">পোষ্ট অফিস</a></li>
+							<li><a href="ward-list.html">ওয়ার্ড</a></li>
+							<li><a href="unionsetting.html">ইউনিয়ন</a></li>
+							<li><a href="chairman.html">চেয়ারম্যান</a></li>
+							<li><a href="sercetary.html">সচিব</a></li>
+						</ul>
+					</li>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+						<i class="uil uil-life-ring"></i>
+						<span class="nav-text">ড্যাশবোর্ড সমূহ</span>
+					</a>
+					<ul aria-expanded="false">
+						
+						<!-- manu mahadidev7 -->
+						<li><a href="registration.html">
+								রেজিস্ট্রেশন
+							</a></li>
+						<li><a href="Holding_tax_profile.html">
+								হোল্ডিং ট্যাক্স প্রোফাইল
+							</a></li>
+						<li><a href="sonod_profile.html">
+								সনদ প্রোফাইল
+							</a></li>
+						<li><a href="Union_Parishad_Admin_Deshboard2.html">
+								Union Parishad Admin Deshboard2
+							</a></li>
+						<li><a href="login.html">
+								Login
+							</a></li>
+						<li><a href="deshboard_index.html">
+								Deshboard Home
+							</a></li>
+						<li><a href="shongtrioUnion.html">
+								Shongtrio Union
+							</a></li>
+						<li><a href="UnionBitikprativedan.html">
+								UnionBitik Prativedan
+							</a></li>
+						<li><a href="UserManegment.html">
+								User Manegment
+							</a></li>
+					</ul>
+				</li>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-diary"></i>
+							<span class="nav-text">সনদ</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="sonod-list.html">সকল সনদ</a></li>
+							<li><a href="traid.html">ট্রেড লাইসেন্স</a></li>
+							<li><a href="pending-sonod.html">অপেক্ষামান সনদ</a></li>
+						</ul>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-list-ol-alt"></i>
+							<span class="nav-text">তালিকা সমূহ</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="votar-list.html">স্থানীয় ভোটার</a></li>
+							<li><a href="birth-register.html">জন্ম নিবন্ধন</a></li>
+							<li><a href="dead-register.html">মৃত্যু নিবন্ধন</a></li>
+							<li><a href="tran-list.html">খাদ্য বান্দব কমূসূচীর তালিকা</a></li>
+						</ul>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-envelope-alt"></i>
+							<span class="nav-text">মেসেজ</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="sms.html">ট্রেক্স মেসেজ</a></li>
+							<li><a href="sms-history.html">রেজিষ্টার</a></li>
+						</ul>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-registered"></i>
+							<span class="nav-text">রেজিষ্টার</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="sonod-register.html">সনদ রেজিষ্টার</a></li>
+							<li><a href="traid-register.html">ট্রেড লাইসেন্স রেজিষ্টার</a></li>
+							<li><a href="holding-tax-register.html">হোল্ডিং ট্যাক্স রেজিষ্টার</a></li>
+							<li><a href="daly-collection.html">দৌনিক আদায়</a></li>
+						</ul>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-edit"></i>
+							<span class="nav-text">হোল্ডিং ট্যাক্স প্রতিবেদন</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="due-tax-collection.html">বকেয়া ট্যাক্স আদায়</a></li>
+							<li><a href="new-assment-list.html">নতুন এসেসমেন্ট</a></li>
+							<li><a href="invoice.html">আদায় রশিদ</a></li>
+						</ul>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-book-open"></i>
+							<span class="nav-text">প্রতিবেদন</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="report-birth 1month.html">ক্রৈমাসিক জন্ম,মৃত্যু প্রতিবেদন</a></li>
+							<li><a href="report-birth 3month.html">জন্ম/মৃত্যু নিবন্ধন প্রতিবেদন</a></li>
+							<li><a href="traid-history.html">ট্রেড লাইসেন্স</a></li>
+							<li><a href="monthly-sonod-list.html">মাসিক সনদ আবেদন</a></li>
+							<li><a href="recharge-history.html">রিচার্জ</a></li>
+						</ul>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-wallet"></i>
+							<span class="nav-text">ওয়ালেট</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="recharge.html">রিচার্জ</a></li>
+							<li><a href="recharge-history.html">রেজিষ্টার</a></li>
+						</ul>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-book-open"></i>
+							<span class="nav-text">যোগাযোগ</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="mobile-no-admin.html">মোবাইল নং</a></li>
+						</ul>
+						<div class="copyright">
+							<p><strong>Digital Up Seba</strong> © 2021 All Rights Reserved</p>
+							<p class="fs-12">Made with <span class="heart"></span> Digital Up Seba</p>
+						</div>
+			</div>
+		</div>
+		<!--**********************************
+	Sidebar end
+***********************************-->
+		<!--**********************************
+            Sidebar end
+        ***********************************-->
+
+
+
+		<!--**********************************
+            Content body start
+        ***********************************-->
+		<div class="content-body">
+			<!-- row -->
+			<div class="container-fluid">
+				<!-- Add Project -->
+				<div class="modal fade" id="addProjectSidebar">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Create Project</h5>
+								<button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="form-group">
+										<label class="text-black font-w500">Project Name</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="form-group">
+										<label class="text-black font-w500">Deadline</label>
+										<input type="date" class="form-control">
+									</div>
+									<div class="form-group">
+										<label class="text-black font-w500">Client Name</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="form-group">
+										<button type="button" class="btn btn-primary">CREATE</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- row -->
+				<div class="row">
+					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
+						<div class="widget-stat card">
+							<div class="card-body p-4">
+								<div class="media ai-icon">
+									<span class="me-3 bgl-primary text-primary">
+										<!-- <i class="ti-user"></i> -->
+										<svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="30"
+											height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+											stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+											class="feather feather-user">
+											<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+											<circle cx="12" cy="7" r="4"></circle>
+										</svg>
+									</span>
+									<div class="media-body">
+										<p class="mb-1">Getway Balance</p>
+										<h4 class="mb-0">3280</h4>
+										<span class="badge badge-primary">+3.5%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
+						<div class="widget-stat card">
+							<div class="card-body p-4">
+								<div class="media ai-icon">
+									<span class="me-3 bgl-warning text-warning">
+										<svg id="icon-orders" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+											viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+											stroke-linecap="round" stroke-linejoin="round"
+											class="feather feather-file-text">
+											<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+											<polyline points="14 2 14 8 20 8"></polyline>
+											<line x1="16" y1="13" x2="8" y2="13"></line>
+											<line x1="16" y1="17" x2="8" y2="17"></line>
+											<polyline points="10 9 9 9 8 9"></polyline>
+										</svg>
+									</span>
+									<div class="media-body">
+										<p class="mb-1">Porichoy Api</p>
+										<h4 class="mb-0">2570</h4>
+										<span class="badge badge-warning">+3.5%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
+						<div class="widget-stat card">
+							<div class="card-body  p-4">
+								<div class="media ai-icon">
+									<span class="me-3 bgl-danger text-danger">
+										<svg id="icon-revenue" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+											viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+											stroke-linecap="round" stroke-linejoin="round"
+											class="feather feather-dollar-sign">
+											<line x1="12" y1="1" x2="12" y2="23"></line>
+											<path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+										</svg>
+									</span>
+									<div class="media-body">
+										<p class="mb-1">Porichoy Api 2</p>
+										<h4 class="mb-0">364.50K</h4>
+										<span class="badge badge-danger">-3.5%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
+						<div class="widget-stat card">
+							<div class="card-body p-4">
+								<div class="media ai-icon">
+									<span class="me-3 bgl-success text-success">
+										<svg id="icon-database-widget" xmlns="http://www.w3.org/2000/svg" width="24"
+											height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+											stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+											class="feather feather-database">
+											<ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+											<path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+											<path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+										</svg>
+									</span>
+									<div class="media-body">
+										<p class="mb-1">Today Revenue</p>
+										<h4 class="mb-0">364.50K</h4>
+										<span class="badge badge-success">-3.5%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
+						<div class="widget-stat card bg-danger">
+							<div class="card-body  p-4">
+								<div class="media">
+									<span class="me-3">
+										<i class="flaticon-381-calendar-1"></i>
+									</span>
+									<div class="media-body text-white text-right">
+										<p class="mb-1">Nid Verification</p>
+										<h3 class="text-white">76</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
+						<div class="widget-stat card bg-success">
+							<div class="card-body p-4">
+								<div class="media">
+									<span class="me-3">
+										<i class="flaticon-381-diamond"></i>
+									</span>
+									<div class="media-body text-white text-right">
+										<p class="mb-1">Autofill Holding Tax</p>
+										<h3 class="text-white">$56K</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
+						<div class="widget-stat card bg-info">
+							<div class="card-body p-4">
+								<div class="media">
+									<span class="me-3">
+										<i class="flaticon-381-heart"></i>
+									</span>
+									<div class="media-body text-white text-right">
+										<p class="mb-1">Autofill birth</p>
+										<h3 class="text-white">783K</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
+						<div class="widget-stat card bg-primary">
+							<div class="card-body p-4">
+								<div class="media">
+									<span class="me-3">
+										<i class="flaticon-381-user-7"></i>
+									</span>
+									<div class="media-body text-white text-right">
+										<p class="mb-1">Autofill Profile</p>
+										<h3 class="text-white">$76</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
+						<div class="widget-stat card bg-primary">
+							<div class="card-body  p-4">
+								<div class="media">
+									<span class="me-3">
+										<i class="la la-users"></i>
+									</span>
+									<div class="media-body text-white">
+										<p class="mb-1">Last Month Revenue</p>
+										<h3 class="text-white">3280</h3>
+										<div class="progress mb-2 bg-secondary">
+											<div class="progress-bar progress-animated bg-light" style="width: 80%">
+											</div>
+										</div>
+										<small>80% Increase in 20 Days</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
+						<div class="widget-stat card bg-warning">
+							<div class="card-body p-4">
+								<div class="media">
+									<span class="me-3">
+										<i class="la la-user"></i>
+									</span>
+									<div class="media-body text-white">
+										<p class="mb-1">New Students</p>
+										<h3 class="text-white">245</h3>
+										<div class="progress mb-2 bg-primary">
+											<div class="progress-bar progress-animated bg-light" style="width: 50%">
+											</div>
+										</div>
+										<small>50% Increase in 25 Days</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
+						<div class="widget-stat card bg-secondary">
+							<div class="card-body p-4">
+								<div class="media">
+									<span class="me-3">
+										<i class="la la-graduation-cap"></i>
+									</span>
+									<div class="media-body text-white">
+										<p class="mb-1">Total Course</p>
+										<h3 class="text-white">28</h3>
+										<div class="progress mb-2 bg-primary">
+											<div class="progress-bar progress-animated bg-light" style="width: 76%">
+											</div>
+										</div>
+										<small>76% Increase in 20 Days</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
+						<div class="widget-stat card bg-danger ">
+							<div class="card-body p-4">
+								<div class="media">
+									<span class="me-3">
+										<i class="la la-dollar"></i>
+									</span>
+									<div class="media-body text-white">
+										<p class="mb-1">Fees Collect</p>
+										<h3 class="text-white">250$</h3>
+										<div class="progress mb-2 bg-secondary">
+											<div class="progress-bar progress-animated bg-light" style="width: 30%">
+											</div>
+										</div>
+										<small>30% Increase in 30 Days</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-3 col-lg-6 col-sm-6">
+						<div class="widget-stat card">
+							<div class="card-body p-4">
+								<h4 class="card-title">Total User</h4>
+								<h3>3280</h3>
+								<div class="progress mb-2">
+									<div class="progress-bar progress-animated bg-primary" style="width: 80%"></div>
+								</div>
+								<small>80% Increase in 20 Days</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-sm-6">
+						<div class="widget-stat card">
+							<div class="card-body p-4">
+								<h4 class="card-title">Pending User</h4>
+								<h3>245</h3>
+								<div class="progress mb-2">
+									<div class="progress-bar progress-animated bg-warning" style="width: 50%"></div>
+								</div>
+								<small>50% Increase in 25 Days</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-sm-6">
+						<div class="widget-stat card">
+							<div class="card-body p-4">
+								<h4 class="card-title">Active User</h4>
+								<h3>28</h3>
+								<div class="progress mb-2">
+									<div class="progress-bar progress-animated bg-red" style="width: 76%"></div>
+								</div>
+								<small>76% Increase in 20 Days</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-sm-6">
+						<div class="widget-stat card">
+							<div class="card-body p-4">
+								<h4 class="card-title">Suspend User</h4>
+								<h3>25160$</h3>
+								<div class="progress mb-2">
+									<div class="progress-bar progress-animated bg-success" style="width: 30%"></div>
+								</div>
+								<small>30% Increase in 30 Days</small>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="col-xl-4 col-lg-12 col-sm-12">
+						<div class="card">
+							<div class="card-header border-0 pb-0">
+								<h2 class="card-title">Admin User</h2>
+							</div>
+							<div class="card-body pb-0">
+								<p>Monitoring</p>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item d-flex px-0 justify-content-between">
+										<strong>DC</strong>
+										<span class="mb-0">View</span>
+									</li>
+									<li class="list-group-item d-flex px-0 justify-content-between">
+										<strong>DDLG</strong>
+										<span class="mb-0">View</span>
+									</li>
+									<li class="list-group-item d-flex px-0 justify-content-between">
+										<strong>UNO</strong>
+										<span class="mb-0">View</span>
+									</li>
+									<li class="list-group-item d-flex px-0 justify-content-between">
+										<strong>User</strong>
+										<span class="mb-0">View</span>
+									</li>
+								</ul>
+							</div>
+							<div class="card-footer pt-0 pb-0 text-center">
+								<div class="row">
+									<div class="col-4 pt-3 pb-3 border-right">
+										<h3 class="mb-1 text-primary">150</h3>
+										<span>Projects</span>
+									</div>
+									<div class="col-4 pt-3 pb-3 border-right">
+										<h3 class="mb-1 text-primary">140</h3>
+										<span>Uploads</span>
+									</div>
+									<div class="col-4 pt-3 pb-3">
+										<h3 class="mb-1 text-primary">45</h3>
+										<span>Tasks</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-xl-8 col-xxl-8 col-lg-12 col-sm-12">
+						<div id="user-activity" class="card">
+							<div class="card-header border-0 pb-0 d-sm-flex d-block">
+								<h4 class="card-title">Sonod Activity</h4>
+								<div class="card-action mb-sm-0 my-2">
+									<ul class="nav nav-tabs" role="tablist">
+										<li class="nav-item">
+											<a class="nav-link active" data-bs-toggle="tab" href="#user" role="tab">
+												Day
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" data-bs-toggle="tab" href="#bounce" role="tab">
+												Month
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" data-bs-toggle="tab" href="#session-duration"
+												role="tab">
+												Year
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<div class="tab-content" id="myTabContent">
+									<div class="tab-pane fade show active" id="user" role="tabpanel">
+										<canvas id="activity" class="chartjs"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-6 col-sm-6">
+						<div class="card overflow-hidden">
+							<div class="card-body">
+								<div class="text-center">
+									<div class="profile-photo">
+										<img src="https://dev.digitalupseba.com/storage/app/DATA/SIGNATUREAPIDATAFILES/PHOTOS/5111616404.jpg"
+											width="100" class="img-fluid rounded-circle" alt="">
+									</div>
+									<h3 class="mt-4 mb-1">Mehedi Hasan</h3>
+									<p class="text-muted">Founder & Ceo</p>
+									<a class="btn btn-outline-primary btn-rounded mt-3 px-5"
+										href="javascript:void(0)">Folllow</a>
+								</div>
+							</div>
+
+							<div class="card-footer pt-0 pb-0 text-center">
+								<div class="row">
+									<div class="col-4 pt-3 pb-3 border-right">
+										<h3 class="mb-1">150</h3><span>Follower</span>
+									</div>
+									<div class="col-4 pt-3 pb-3 border-right">
+										<h3 class="mb-1">140</h3><span>Place Stay</span>
+									</div>
+									<div class="col-4 pt-3 pb-3">
+										<h3 class="mb-1">45</h3><span>Reviews</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-6 col-sm-6">
+						<div class="card active_users">
+							<div class="card-header bg-dark border-0 pb-0">
+								<h4 class="card-title text-white">Active Users</h4>
+								<span id="counter"></span>
+							</div>
+							<div class="bg-dark">
+								<canvas id="activeUser"></canvas>
+							</div>
+							<div class="card-body pt-0">
+								<div class="list-group-flush mt-4">
+									<div
+										class="list-group-item bg-transparent d-flex justify-content-between px-0 py-1 font-weight-semi-bold border-top-0">
+										<p class="mb-0">Top Active Pages</p>
+										<p class="mb-0">Active Users</p>
+									</div>
+									<div
+										class="list-group-item bg-transparent d-flex justify-content-between px-0 py-1">
+										<p class="mb-0">/bootstrap-themes/</p>
+										<p class="mb-0">3</p>
+									</div>
+									<div
+										class="list-group-item bg-transparent d-flex justify-content-between px-0 py-1">
+										<p class="mb-0">/tags/html5/</p>
+										<p class="mb-0">3</p>
+									</div>
+									<div
+										class="list-group-item bg-transparent d-xxl-flex justify-content-between px-0 py-1 d-none">
+										<p class="mb-0">/</p>
+										<p class="mb-0">2</p>
+									</div>
+									<div
+										class="list-group-item bg-transparent d-xxl-flex justify-content-between px-0 py-1 d-none">
+										<p class="mb-0">/preview/falcon/dashboard/</p>
+										<p class="mb-0">2</p>
+									</div>
+									<div
+										class="list-group-item bg-transparent d-flex justify-content-between px-0 py-1">
+										<p class="mb-0">/100-best-themes...all-time/</p>
+										<p class="mb-0">1</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-4 col-lg-12 col-sm-12">
+						<div class="card overflow-hidden">
+							<div class="text-center p-3 overlay-box "
+								style="background-image: url(public/images/big/img1.jpg);">
+								<div class="profile-photo">
+									<img src="https://dev.digitalupseba.com/storage/app/DATA/SIGNATUREAPIDATAFILES/PHOTOS/5111616404.jpg"
+										width="100" class="img-fluid rounded-circle" alt="">
+								</div>
+								<h3 class="mt-3 mb-1 text-white">Mehedi Hasan</h3>
+								<p class="text-white mb-0">Founder & Ceo</p>
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item d-flex justify-content-between"><span class="mb-0">Patient
+										Gender</span> <strong class="text-muted">Male </strong></li>
+								<li class="list-group-item d-flex justify-content-between"><span class="mb-0">Years
+										Old</span> <strong class="text-muted">Age: 20 </strong></li>
+							</ul>
+							<div class="card-footer border-0 mt-0">
+								<button class="btn btn-primary btn-lg btn-block">
+									<i class="fa fa-bell-o"></i> Reminder Alarm
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-12 col-lg-12 col-xxl-12 col-sm-12">
+						<div class="card">
+							<div class="card-header">
+								<h4 class="card-title">Payments Details</h4>
+							</div>
+							<div class="card-body">
+								<div class="table-responsive recentOrderTable">
+									<table class="table verticle-middle table-responsive-md">
+										<thead>
+											<tr>
+												<th scope="col">No.</th>
+												<th scope="col">Name</th>
+												<th scope="col">User</th>
+												<th scope="col">Union Id</th>
+												<th scope="col">Union Name</th>
+												<th scope="col">Fee</th>
+												<th scope="col">Payment Method</th>
+												<th scope="col">Verification</th>
+												<th scope="col">s</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>Mehedi Hasan</td>
+												<td>Udc</td>
+												<td>44</td>
+												<td>Kutubpur Union Parishad</td>
+												<td>120</td>
+												<td>Bkash</td>
+												<td><span class="badge badge-rounded badge-primary">Success</span></td>
+												<td>
+													<div class="dropdown custom-dropdown mb-0">
+														<div class="btn sharp btn-primary tp-btn"
+															data-bs-toggle="dropdown">
+															<svg xmlns="http://www.w3.org/2000/svg"
+																xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+																height="18px" viewBox="0 0 24 24" version="1.1">
+																<g stroke="none" stroke-width="1" fill="none"
+																	fill-rule="evenodd">
+																	<rect x="0" y="0" width="24" height="24" />
+																	<circle fill="#000000" cx="12" cy="5" r="2" />
+																	<circle fill="#000000" cx="12" cy="12" r="2" />
+																	<circle fill="#000000" cx="12" cy="19" r="2" />
+																</g>
+															</svg>
+														</div>
+														<div class="dropdown-menu dropdown-menu-end">
+															<a class="dropdown-item"
+																href="javascript:void(0);">Details</a>
+															<a class="dropdown-item text-danger"
+																href="javascript:void(0);">Cancel</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Mehedi Hasan</td>
+												<td>Udc</td>
+												<td>44</td>
+												<td>Kutubpur Union Parishad</td>
+												<td>120</td>
+												<td>Bkash</td>
+												<td><span class="badge badge-rounded badge-primary">Success</span></td>
+												<td>
+													<div class="dropdown custom-dropdown mb-0">
+														<div class="btn sharp btn-primary tp-btn"
+															data-bs-toggle="dropdown">
+															<svg xmlns="http://www.w3.org/2000/svg"
+																xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+																height="18px" viewBox="0 0 24 24" version="1.1">
+																<g stroke="none" stroke-width="1" fill="none"
+																	fill-rule="evenodd">
+																	<rect x="0" y="0" width="24" height="24" />
+																	<circle fill="#000000" cx="12" cy="5" r="2" />
+																	<circle fill="#000000" cx="12" cy="12" r="2" />
+																	<circle fill="#000000" cx="12" cy="19" r="2" />
+																</g>
+															</svg>
+														</div>
+														<div class="dropdown-menu dropdown-menu-end">
+															<a class="dropdown-item"
+																href="javascript:void(0);">Details</a>
+															<a class="dropdown-item text-danger"
+																href="javascript:void(0);">Cancel</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Mehedi Hasan</td>
+												<td>Udc</td>
+												<td>44</td>
+												<td>Kutubpur Union Parishad</td>
+												<td>120</td>
+												<td>Bkash</td>
+												<td><span class="badge badge-rounded badge-primary">Success</span></td>
+												<td>
+													<div class="dropdown custom-dropdown mb-0">
+														<div class="btn sharp btn-primary tp-btn"
+															data-bs-toggle="dropdown">
+															<svg xmlns="http://www.w3.org/2000/svg"
+																xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+																height="18px" viewBox="0 0 24 24" version="1.1">
+																<g stroke="none" stroke-width="1" fill="none"
+																	fill-rule="evenodd">
+																	<rect x="0" y="0" width="24" height="24" />
+																	<circle fill="#000000" cx="12" cy="5" r="2" />
+																	<circle fill="#000000" cx="12" cy="12" r="2" />
+																	<circle fill="#000000" cx="12" cy="19" r="2" />
+																</g>
+															</svg>
+														</div>
+														<div class="dropdown-menu dropdown-menu-end">
+															<a class="dropdown-item"
+																href="javascript:void(0);">Details</a>
+															<a class="dropdown-item text-danger"
+																href="javascript:void(0);">Cancel</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>Mehedi Hasan</td>
+												<td>Udc</td>
+												<td>44</td>
+												<td>Kutubpur Union Parishad</td>
+												<td>120</td>
+												<td>Bkash</td>
+												<td><span class="badge badge-rounded badge-primary">Success</span></td>
+												<td>
+													<div class="dropdown custom-dropdown mb-0">
+														<div class="btn sharp btn-primary tp-btn"
+															data-bs-toggle="dropdown">
+															<svg xmlns="http://www.w3.org/2000/svg"
+																xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+																height="18px" viewBox="0 0 24 24" version="1.1">
+																<g stroke="none" stroke-width="1" fill="none"
+																	fill-rule="evenodd">
+																	<rect x="0" y="0" width="24" height="24" />
+																	<circle fill="#000000" cx="12" cy="5" r="2" />
+																	<circle fill="#000000" cx="12" cy="12" r="2" />
+																	<circle fill="#000000" cx="12" cy="19" r="2" />
+																</g>
+															</svg>
+														</div>
+														<div class="dropdown-menu dropdown-menu-end">
+															<a class="dropdown-item"
+																href="javascript:void(0);">Details</a>
+															<a class="dropdown-item text-danger"
+																href="javascript:void(0);">Cancel</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>Mehedi Hasan</td>
+												<td>Udc</td>
+												<td>44</td>
+												<td>Kutubpur Union Parishad</td>
+												<td>120</td>
+												<td>Bkash</td>
+												<td><span class="badge badge-rounded badge-primary">Success</span></td>
+												<td>
+													<div class="dropdown custom-dropdown mb-0">
+														<div class="btn sharp btn-primary tp-btn"
+															data-bs-toggle="dropdown">
+															<svg xmlns="http://www.w3.org/2000/svg"
+																xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+																height="18px" viewBox="0 0 24 24" version="1.1">
+																<g stroke="none" stroke-width="1" fill="none"
+																	fill-rule="evenodd">
+																	<rect x="0" y="0" width="24" height="24" />
+																	<circle fill="#000000" cx="12" cy="5" r="2" />
+																	<circle fill="#000000" cx="12" cy="12" r="2" />
+																	<circle fill="#000000" cx="12" cy="19" r="2" />
+																</g>
+															</svg>
+														</div>
+														<div class="dropdown-menu dropdown-menu-end">
+															<a class="dropdown-item"
+																href="javascript:void(0);">Details</a>
+															<a class="dropdown-item text-danger"
+																href="javascript:void(0);">Cancel</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-xxl-6 col-sm-6">
+						<div class="card bg-primary">
+							<div class="card-body pb-0">
+								<div class="row">
+									<div class="col">
+										<h5 class="text-white">Revenue Chart</h5>
+										<span class="text-white">2023.1.1</span>
+									</div>
+								</div>
+							</div>
+							<div class="chart-wrapper">
+								<canvas id="chart_widget_1"></canvas>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-xxl-6 col-sm-6">
+						<div class="card bg-success">
+							<div class="card-body pb-0">
+								<div class="row">
+									<div class="col">
+										<h5 class="text-white">Revenue Chart</h5>
+										<span class="text-white">2023.1.1</span>
+									</div>
+									<div class="col text-right">
+										<h5 class="text-white"><i class="fa fa-caret-up"></i> 260</h5>
+										<span class="text-white">+12.5(2.8%)</span>
+									</div>
+								</div>
+							</div>
+							<div class="chart-wrapper">
+								<div id="chart_widget_5"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-12 col-xxl-12">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="card">
+									<div class="card-body pb-0">
+										<div class="row justify-content-between">
+											<div class="col-auto">
+												<h5>Autofill</h5>
+											</div>
+											<div class="col-auto">
+												<h5>
+													<span><i class="fa fa-caret-up"></i></span>
+													<span>2,250</span>
+												</h5>
+											</div>
+										</div>
+									</div>
+									<div class="chart-wrapper">
+										<div id="chart_widget_6"></div>
+									</div>
+									<div class="card-footer">
+										<div class="row">
+											<div class="col text-center">
+												<h5 class="font-weight-normal">1230</h5>
+												<span>Autofill</span>
+											</div>
+											<div class="col text-center">
+												<h5 class="font-weight-normal">1230</h5>
+												<span>Autofill Verification</span>
+											</div>
+											<div class="col text-center">
+												<h5 class="font-weight-normal">1230</h5>
+												<span>Autofill Birth</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="card">
+									<div class="card-body pb-0">
+										<div class="row justify-content-between">
+											<div class="col-auto">
+												<h5>Autofill Chart</h5>
+											</div>
+											<div class="col-auto">
+												<h5>
+													<span><i class="fa fa-caret-up"></i></span>
+													<span>2,250</span>
+												</h5>
+											</div>
+										</div>
+									</div>
+									<div class="chart-wrapper">
+										<canvas id="chart_widget_3"></canvas>
+									</div>
+									<div class="card-footer">
+										<div class="row">
+											<div class="col text-center">
+												<h5 class="font-weight-normal">1230</h5>
+												<span>Autofill</span>
+											</div>
+											<div class="col text-center">
+												<h5 class="font-weight-normal">1230</h5>
+												<span>Autofill Verification</span>
+											</div>
+											<div class="col text-center">
+												<h5 class="font-weight-normal">1230</h5>
+												<span>Autofill Birth</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-6 col-lg-12">
+						<div class="card">
+							<div class="card-header border-0 pb-0">
+								<h4 class="card-title">Top Poroshoba</h4>
+							</div>
+							<div class="card-body pb-0">
+								<div class="widget-media">
+									<ul class="timeline">
+										<li>
+											<div class="timeline-panel">
+												<div class="media me-2">
+													<img alt="image" width="50" src="public/images/avatar/1.jpg">
+												</div>
+												<div class="media-body">
+													<h5 class="mb-1">Noakhali Poroshoba</h5>
+													<small class="d-block">29 July 2020 - 02:26 PM</small>
+												</div>
+												<div class="dropdown">
+													<button type="button" class="btn btn-primary light sharp"
+														data-bs-toggle="dropdown">
+														<svg width="18px" height="18px" viewBox="0 0 24 24"
+															version="1.1">
+															<g stroke="none" stroke-width="1" fill="none"
+																fill-rule="evenodd">
+																<rect x="0" y="0" width="24" height="24" />
+																<circle fill="#000000" cx="5" cy="12" r="2" />
+																<circle fill="#000000" cx="12" cy="12" r="2" />
+																<circle fill="#000000" cx="19" cy="12" r="2" />
+															</g>
+														</svg>
+													</button>
+													<div class="dropdown-menu dropdown-menu-end">
+														<a class="dropdown-item" href="#">Edit</a>
+														<a class="dropdown-item" href="#">Delete</a>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="timeline-panel">
+												<div class="media me-2 media-info">
+													KG
+												</div>
+												<div class="media-body">
+													<h5 class="mb-1">Chowmuhani Poroshoba</h5>
+													<small class="d-block">29 July 2020 - 02:26 PM</small>
+												</div>
+												<div class="dropdown">
+													<button type="button" class="btn btn-info light sharp"
+														data-bs-toggle="dropdown">
+														<svg width="18px" height="18px" viewBox="0 0 24 24"
+															version="1.1">
+															<g stroke="none" stroke-width="1" fill="none"
+																fill-rule="evenodd">
+																<rect x="0" y="0" width="24" height="24" />
+																<circle fill="#000000" cx="5" cy="12" r="2" />
+																<circle fill="#000000" cx="12" cy="12" r="2" />
+																<circle fill="#000000" cx="19" cy="12" r="2" />
+															</g>
+														</svg>
+													</button>
+													<div class="dropdown-menu dropdown-menu-end">
+														<a class="dropdown-item" href="#">Edit</a>
+														<a class="dropdown-item" href="#">Delete</a>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="timeline-panel">
+												<div class="media me-2 media-success">
+													<i class="fa fa-home"></i>
+												</div>
+												<div class="media-body">
+													<h5 class="mb-1">Senbag Poroshoba</h5>
+													<small class="d-block">29 July 2020 - 02:26 PM</small>
+												</div>
+												<div class="dropdown">
+													<button type="button" class="btn btn-success light sharp"
+														data-bs-toggle="dropdown">
+														<svg width="18px" height="18px" viewBox="0 0 24 24"
+															version="1.1">
+															<g stroke="none" stroke-width="1" fill="none"
+																fill-rule="evenodd">
+																<rect x="0" y="0" width="24" height="24" />
+																<circle fill="#000000" cx="5" cy="12" r="2" />
+																<circle fill="#000000" cx="12" cy="12" r="2" />
+																<circle fill="#000000" cx="19" cy="12" r="2" />
+															</g>
+														</svg>
+													</button>
+													<div class="dropdown-menu dropdown-menu-end">
+														<a class="dropdown-item" href="#">Edit</a>
+														<a class="dropdown-item" href="#">Delete</a>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="chart-wrapper">
+								<canvas id="chart_widget_9"></canvas>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-12">
+						<div class="card">
+							<div class="card-header border-0 pb-0">
+								<h4 class="card-title">Top Union</h4>
+							</div>
+							<div class="card-body pb-0">
+								<div class="widget-media">
+									<ul class="timeline">
+										<li>
+											<div class="timeline-panel">
+												<div class="media me-2">
+													<img alt="image" width="50" src="public/images/avatar/4.jpg">
+												</div>
+												<div class="media-body">
+													<h5 class="mb-1">Kutubpur Union Parishad</h5>
+													<small class="d-block">29 July 2020 - 02:26 PM</small>
+												</div>
+												<div class="dropdown">
+													<button type="button" class="btn btn-primary light sharp"
+														data-bs-toggle="dropdown">
+														<svg width="18px" height="18px" viewBox="0 0 24 24"
+															version="1.1">
+															<g stroke="none" stroke-width="1" fill="none"
+																fill-rule="evenodd">
+																<rect x="0" y="0" width="24" height="24" />
+																<circle fill="#000000" cx="5" cy="12" r="2" />
+																<circle fill="#000000" cx="12" cy="12" r="2" />
+																<circle fill="#000000" cx="19" cy="12" r="2" />
+															</g>
+														</svg>
+													</button>
+													<div class="dropdown-menu dropdown-menu-end">
+														<a class="dropdown-item" href="#">Edit</a>
+														<a class="dropdown-item" href="#">Delete</a>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="timeline-panel">
+												<div class="media me-2 media-info">
+													<img alt="image" width="50" src="public/images/avatar/2.jpg">
+												</div>
+												<div class="media-body">
+													<h5 class="mb-1">Kadirpur Union Parishad</h5>
+													<small class="d-block">29 July 2020 - 02:26 PM</small>
+												</div>
+												<div class="dropdown">
+													<button type="button" class="btn btn-info light sharp"
+														data-bs-toggle="dropdown">
+														<svg width="18px" height="18px" viewBox="0 0 24 24"
+															version="1.1">
+															<g stroke="none" stroke-width="1" fill="none"
+																fill-rule="evenodd">
+																<rect x="0" y="0" width="24" height="24" />
+																<circle fill="#000000" cx="5" cy="12" r="2" />
+																<circle fill="#000000" cx="12" cy="12" r="2" />
+																<circle fill="#000000" cx="19" cy="12" r="2" />
+															</g>
+														</svg>
+													</button>
+													<div class="dropdown-menu dropdown-menu-end">
+														<a class="dropdown-item" href="#">Edit</a>
+														<a class="dropdown-item" href="#">Delete</a>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="timeline-panel">
+												<div class="media me-2 media-success">
+													<img alt="image" width="50" src="public/images/avatar/3.jpg">
+												</div>
+												<div class="media-body">
+													<h5 class="mb-1">Arjuntala Union Parishad</h5>
+													<small class="d-block">29 July 2020 - 02:26 PM</small>
+												</div>
+												<div class="dropdown">
+													<button type="button" class="btn btn-success light sharp"
+														data-bs-toggle="dropdown">
+														<svg width="18px" height="18px" viewBox="0 0 24 24"
+															version="1.1">
+															<g stroke="none" stroke-width="1" fill="none"
+																fill-rule="evenodd">
+																<rect x="0" y="0" width="24" height="24" />
+																<circle fill="#000000" cx="5" cy="12" r="2" />
+																<circle fill="#000000" cx="12" cy="12" r="2" />
+																<circle fill="#000000" cx="19" cy="12" r="2" />
+															</g>
+														</svg>
+													</button>
+													<div class="dropdown-menu dropdown-menu-end">
+														<a class="dropdown-item" href="#">Edit</a>
+														<a class="dropdown-item" href="#">Delete</a>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="chart-wrapper">
+								<canvas id="chart_widget_10"></canvas>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="card">
+							<div class="social-graph-wrapper widget-facebook">
+								<span class="s-icon"><i class="fab fa-facebook-f"></i></span>
+							</div>
+							<div class="row">
+								<div class="col-6 border-right">
+									<div class="pt-3 pb-3 pl-0 pr-0 text-center">
+										<h4 class="m-1"><span class="counter">89</span> k</h4>
+										<p class="m-0">Friends</p>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="pt-3 pb-3 pl-0 pr-0 text-center">
+										<h4 class="m-1"><span class="counter">119</span> k</h4>
+										<p class="m-0">Followers</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="card">
+							<div class="social-graph-wrapper widget-linkedin">
+								<span class="s-icon"><i class="fab fa-linkedin-in"></i></span>
+							</div>
+							<div class="row">
+								<div class="col-6 border-right">
+									<div class="pt-3 pb-3 pl-0 pr-0 text-center">
+										<h4 class="m-1"><span class="counter">89</span> k</h4>
+										<p class="m-0">Friends</p>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="pt-3 pb-3 pl-0 pr-0 text-center">
+										<h4 class="m-1"><span class="counter">119</span> k</h4>
+										<p class="m-0">Followers</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="card">
+							<div class="social-graph-wrapper widget-googleplus">
+								<span class="s-icon"><i class="fab fa-google-plus-g"></i></span>
+							</div>
+							<div class="row">
+								<div class="col-6 border-right">
+									<div class="pt-3 pb-3 pl-0 pr-0 text-center">
+										<h4 class="m-1"><span class="counter">89</span> k</h4>
+										<p class="m-0">Friends</p>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="pt-3 pb-3 pl-0 pr-0 text-center">
+										<h4 class="m-1"><span class="counter">119</span> k</h4>
+										<p class="m-0">Followers</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="card">
+							<div class="social-graph-wrapper widget-twitter">
+								<span class="s-icon"><i class="fab fa-twitter"></i></span>
+							</div>
+							<div class="row">
+								<div class="col-6 border-right">
+									<div class="pt-3 pb-3 pl-0 pr-0 text-center">
+										<h4 class="m-1"><span class="counter">89</span> k</h4>
+										<p class="m-0">Friends</p>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="pt-3 pb-3 pl-0 pr-0 text-center">
+										<h4 class="m-1"><span class="counter">119</span> k</h4>
+										<p class="m-0">Followers</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--**********************************
+            Content body end
+        ***********************************-->
+
+
+		<!--**********************************
+            Footer start
+        ***********************************-->
+
+		<!--**********************************
+  Footer start
+***********************************-->
+		<div class="footer">
+			<div class="copyright">
+				<p>Copyright © Digital Up Seba &amp; Developed by <a href="https://digitalupseba.com/"
+						target="_blank">Digital Up Seba</a> 2021</p>
+			</div>
+		</div>
+		<!--**********************************
+  Footer end
+***********************************-->
+		<!--**********************************
+            Footer end
+        ***********************************-->
+
+		<!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+		<!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+
+	</div>
+	<!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+	<!--**********************************
+        Scripts
+    ***********************************-->
+	<script src="public/vendor/global/global.min.js" type="text/javascript"></script>
+	<script src="public/vendor/bootstrap-select/dist/js/bootstrap-select.min.js" type="text/javascript"></script>
+	<script src="public/vendor/chart.js/Chart.bundle.min.js" type="text/javascript"></script>
+	<script src="public/vendor/apexchart/apexchart.js" type="text/javascript"></script>
+	<script src="public/vendor/chartist/js/chartist.min.js" type="text/javascript"></script>
+	<script src="public/vendor/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js" type="text/javascript">
+	</script>
+	<script src="public/vendor/flot/jquery.flot.js" type="text/javascript"></script>
+	<script src="public/vendor/flot/jquery.flot.pie.js" type="text/javascript"></script>
+	<script src="public/vendor/flot/jquery.flot.resize.js" type="text/javascript"></script>
+	<script src="public/vendor/flot-spline/jquery.flot.spline.min.js" type="text/javascript"></script>
+	<script src="public/vendor/jquery-sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+	<script src="public/js/plugins-init/sparkline-init.js" type="text/javascript"></script>
+	<script src="vendor/peity/jquery.peity.min.js" type="text/javascript"></script>
+	<script src="public/js/plugins-init/piety-init.js" type="text/javascript"></script>
+	<script src="public/js/plugins-init/widgets-script-init.js" type="text/javascript"></script>
+	<script src="public/js/custom.js" type="text/javascript"></script>
+	<script src="public/js/deznav-init.js" type="text/javascript"></script>
+	<script src="public/js/demo.js" type="text/javascript"></script>
+	<script src="public/js/styleSwitcher.js" type="text/javascript"></script>
+</body>
+
+</html>
