@@ -412,7 +412,7 @@
 			<div class="container-fluid">
 				<div class="row page-titles">
 					<ol class="breadcrumb">
-						<li class="breadcrumb-item active"><a href="javascript:void(0)">নতুন গ্রাহক যুক্ত করুন </a></li>
+						<li class="breadcrumb-item active"><a href="javascript:void(0)">মাসিক রিডিং এন্টি </a></li>
 					</ol>
 				</div>
 				<!-- row -->
@@ -439,17 +439,21 @@
 								</div> -->
                                 
 								<div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
+                                    <label class="text-label">মিটার নং <span style="color: red;">*</span></label>
 									<input enavle="disabled" type="text" class="form-control input-default"
-										placeholder="জাতিয় পরিচয় পত্র নং - example 5821639253">
+										placeholder="মিটার নং - example 5821639253">
 								</div>
-								<div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
-									<input enavle="disabled" type="date" class="form-control input-default"
-										placeholder="সেবাগ্রহিতার নাম">
+                                <div class="col-xl-2 col-xxl-6 col-md-3 mb-2">
+									<label class="text-label">QR স্ক্যান করুন<span style="color: red;"></span></label>
+                                    <input type="file" name="files" multiple="multiple">
 								</div>
-								<div class="col-xl-1 col-xxl-6 col-md-6">
+                                
+								
+								<!-- <div class="col-xl-3 col-xxl-6 col-md-6">
 									<button type="submit" class="btn me-2 btn-primary">অনুসন্ধান</button>
-								</div>
-                                <div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
+                                    <input type="file" name="files" multiple="multiple"> -->
+								<!-- </div>  -->
+                                <!-- <div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
 									<select data-v-3161f96a="" class="form-control">
 										<option data-v-3161f96a="" value="">
 											ওয়ার্ড
@@ -457,33 +461,47 @@
 										<option data-v-3161f96a="">1</option>
 										<option data-v-3161f96a="">2</option>
 									</select>
-								</div>
-                                <div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
+								</div> -->
+                                <!-- <div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
 									<input enavle="disabled" type="text" class="form-control input-default"
 										placeholder="হোল্ডিং নাম্বার পুরাতন">
 								</div>
                                 <div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
 									<input enavle="disabled" type="text" class="form-control input-default"
 										placeholder="মিটার নং">
-								</div>
-                                <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
+								</div> -->
+                                <!-- <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
 									<input enavle="disabled" type="text" class="form-control input-default"
 										placeholder="বাড়ীর নাম">
-								</div>
-                                <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
+								</div> -->
+                                <!-- <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
 									<input enavle="disabled" type="text" class="form-control input-default"
 										placeholder="মোবাইল নাম্বার">
-								</div>
+								</div> -->
 								<div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
-									<input enavle="disabled" type="text" class="form-control input-default"
+                                    <label class="text-label">সেবাগ্রহিতার নাম <span style="color: red;">*</span></label>
+
+									<input disabled="disabled" type="text" class="form-control input-default"
 										placeholder="সেবাগ্রহিতার নাম">
 								</div>
 
 								<div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
-									<input enavle="disabled" type="text" class="form-control input-default"
+                                    <label class="text-label">পিতার নাম <span style="color: red;">*</span></label>
+
+									<input disabled="disabled" type="text" class="form-control input-default"
 										placeholder="পিতার নাম">
 								</div>
-								<div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
+                                <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
+                                    <label class="text-label">বকেয়া মাসের রিডিং <span style="color: red;">*</span></label>
+									<input disabled="disabled" type="text" class="form-control input-default"
+										placeholder="example 5821639253">
+								</div>
+                                <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
+                                    <label class="text-label">বর্তমান মাসের রিডিং <span style="color: red;">*</span></label>
+									<input enavle="disabled" type="text" class="form-control input-default"
+										placeholder="example 5821639253">
+								</div>
+								<!-- <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
 									<input enavle="disabled" type="text" class="form-control input-default" placeholder="মাতার নাম">
 								</div>
                                 <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
@@ -503,20 +521,17 @@
 										<option data-v-3161f96a="">কুতুবপুর</option>
 										<option data-v-3161f96a="">আলাইয়ারপুর</option>
 									</select>
+								</div> -->
+                                
+                                
+                                <div class="col-xl-2 col-xxl-6 col-md-3 mb-2">
+									<label class="text-label">মিটারের রিডিং যুক্ত ছবি<span style="color: red;">*</span></label>
+                                    <input type="file" name="files" multiple="multiple">
+
 								</div>
-                                
-                                
-                                <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
-									<!-- <label class="text-label">মিটারের ছবি <span style="color: red;">*</span></label> -->
-										<span class="btn btn-success fileinput-button">
-											<i class="glyphicon glyphicon-plus"></i>
-											<span>মিটারের ছবি</span>
-											<input type="file" name="files" multiple="multiple">
-										</span>
-								</div>
-                                
+                                <p>
                                 <!-- <button type="button" class="btn btn-info"> সাবমিট</button></div> -->
-								<div class="col-xl-2 col-xxl-6 col-md-2">
+								<div class="col-xl-3 col-xxl-6 col-md-2">
 									<button type="submit" class="btn btn-info">সাবমিট</button>
                                     
 								</div>
