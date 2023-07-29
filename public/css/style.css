@@ -10538,7 +10538,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
         font-weight: 400;
         display: inline-block;
         font-size: 15px;
-        color: ##ffffff; }
+        color: #ffffff; }
         .deznav .metismenu > li > a i {
           color: #969BA0; }
         .deznav .metismenu > li > a svg {
@@ -10640,7 +10640,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
       display: block;
       padding: 0.625rem 1.875rem;
       outline-width: 0;
-      color: #3f4358;
+      color: #ffffff;
       text-decoration: none; }
       @media only screen and (max-width: 767px) {
         .deznav .metismenu a {
