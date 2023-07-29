@@ -15210,7 +15210,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     color: rgba(255, 255, 255, 0.5); }
   [data-sidebarbg="color_14"][data-theme-version="dark"] .deznav .metismenu a,
   [data-sidebarbg="color_14"] .deznav .metismenu a {
-    color: rgb(255 255 25; }
+    color:  rgba(255, 255, 255, 0.7); } 
   [data-sidebarbg="color_14"][data-theme-version="dark"] .deznav .metismenu ul a:before,
   [data-sidebarbg="color_14"] .deznav .metismenu ul a:before {
     border-color: rgba(255, 255, 255, 0.7); }
