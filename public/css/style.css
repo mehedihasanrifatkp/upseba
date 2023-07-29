@@ -11316,7 +11316,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     transform: rotate(-45deg) translateY(-50%); } }
 
 :root {
-  --primary: #eb8153;
+  --primary: #2f4cdd;
   --secondary: #6418C3;
   --primary-hover: #e66025;
   --primary-light: #fbe5dc;
