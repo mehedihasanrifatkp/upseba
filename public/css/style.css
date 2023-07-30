@@ -8842,7 +8842,7 @@ a {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: var(--nav-headbg);
+  background-color: #2a2a2a;
   transition: all .2s ease;
   z-index: 10; }
   .nav-header .logo-abbr {
@@ -10538,7 +10538,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
         font-weight: 400;
         display: inline-block;
         font-size: 15px;
-        color: #3f4358; }
+        color: #ffffff; }
         .deznav .metismenu > li > a i {
           color: #969BA0; }
         .deznav .metismenu > li > a svg {
@@ -10573,7 +10573,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
           color: var(--primary); }
       .deznav .metismenu > li.mm-active > a {
         background: var(--rgba-primary-1);
-        color: var(--primary);
+        color: #fffff;
         font-weight: 500;
         box-shadow: none; }
         .deznav .metismenu > li.mm-active > a i {
@@ -10640,7 +10640,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
       display: block;
       padding: 0.625rem 1.875rem;
       outline-width: 0;
-      color: #3f4358;
+      color: #ffffff;
       text-decoration: none; }
       @media only screen and (max-width: 767px) {
         .deznav .metismenu a {
@@ -12784,7 +12784,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 :root {
   --nav-headbg: #fff;
-  --sidebar-bg: #fff;
+  --sidebar-bg: #2a2a2a;
   --headerbg: #fff; }
 
 [data-nav-headerbg="color_2"][data-theme-version="dark"],
@@ -27601,7 +27601,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   --primary-light: #fbe5dc;
   --primary-dark: #943911;
   --rgba-primary-1: rgba(235, 129, 83, 0.1);
-  --rgba-primary-2: rgba(235, 129, 83, 0.2);
+  --rgba-primary-2: rgb(255 255 255 / 20%);
   --rgba-primary-3: rgba(235, 129, 83, 0.3);
   --rgba-primary-4: rgba(235, 129, 83, 0.4);
   --rgba-primary-5: rgba(235, 129, 83, 0.5);
