@@ -251,7 +251,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: #ededed;
+  background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
@@ -10439,7 +10439,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   top: 4.5rem;
   padding-top: 0;
   z-index: 4;
-  background-color: #212529;
+  background-color: var(--sidebar-bg);
   transition: all .2s ease;
   box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.02); }
   @media only screen and (max-width: 1199px) {
@@ -10538,7 +10538,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
         font-weight: 400;
         display: inline-block;
         font-size: 15px;
-        color: #ffffff; }
+        color: #3f4358; }
         .deznav .metismenu > li > a i {
           color: #969BA0; }
         .deznav .metismenu > li > a svg {
@@ -10640,7 +10640,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
       display: block;
       padding: 0.625rem 1.875rem;
       outline-width: 0;
-      color: #ffffff;
+      color: #3f4358;
       text-decoration: none; }
       @media only screen and (max-width: 767px) {
         .deznav .metismenu a {
@@ -11316,7 +11316,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     transform: rotate(-45deg) translateY(-50%); } }
 
 :root {
-  --primary: #2f4cdd;
+  --primary: #eb8153;
   --secondary: #6418C3;
   --primary-hover: #e66025;
   --primary-light: #fbe5dc;
