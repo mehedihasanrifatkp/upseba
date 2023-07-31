@@ -10566,7 +10566,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
           height: 1px;
           left: 44px; }
       .deznav .metismenu > li:hover > a, .deznav .metismenu > li:focus > a {
-        color: var(--primary); }
+        color: #ffffff; }
         .deznav .metismenu > li:hover > a g [fill], .deznav .metismenu > li:focus > a g [fill] {
           fill: var(--primary); }
         .deznav .metismenu > li:hover > a i, .deznav .metismenu > li:focus > a i {
