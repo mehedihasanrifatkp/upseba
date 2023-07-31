@@ -18798,7 +18798,7 @@ svg text {
 
 .form-control {
   background: #fff;
-  border: 0.0625rem solid #EEEEEE;
+  border: 0.01rem solid #c0c0c0;
   padding: 0.3125rem 1.25rem;
   color: #6e6e6e;
   height: 3.5rem;
