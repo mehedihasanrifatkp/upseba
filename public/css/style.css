@@ -10577,7 +10577,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
         font-weight: 500;
         box-shadow: none; }
         .deznav .metismenu > li.mm-active > a i {
-          color: var(--primary);
+          color: #ffff00;
           font-weight: 100; }
         .deznav .metismenu > li.mm-active > a g [fill] {
           fill: var(--primary); }
