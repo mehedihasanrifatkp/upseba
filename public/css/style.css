@@ -1517,7 +1517,7 @@ progress {
   --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
   width: 100%;
   margin-bottom: 1rem;
-  color: #7e7e7e;
+  color: #000000;
   vertical-align: top;
   border-color: #EEEEEE; }
   .table > :not(caption) > * > * {
@@ -8042,7 +8042,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #7e7e7e; }
+  color: #000000; }
   a:hover, a:focus, a.active {
     text-decoration: none; }
 
@@ -10630,9 +10630,9 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
             padding-left: 3.5rem;
             font-size: 14px; } }
         .deznav .metismenu ul a:hover, .deznav .metismenu ul a:focus, .deznav .metismenu ul a.mm-active {
-          background: #f5f5f5;
+          background: #6b6b6b82;
           text-decoration: none;
-          color: var(--primary); }
+          color: #ffffff; }
           .deznav .metismenu ul a:hover:before, .deznav .metismenu ul a:focus:before, .deznav .metismenu ul a.mm-active:before {
             border-color: var(--primary); }
     .deznav .metismenu a {
