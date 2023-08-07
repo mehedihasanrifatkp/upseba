@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans Bengali', sans-serif;
+}
+a, a:hover a:focus{
+    text-decoration: none !important;
+    outline: none !important;
+}
+#leftMenuArea{
+    min-height: 100vh;
+    background-color: rgb(20, 20, 20);
+}
+body{
+    background-color: #e7e7e7;
+    /* color: #fff; */
+}
+.container{
+    width: 100% !important;
+    max-width: 100% !important;
+}
+a, ul{
+    text-decoration: none;
+    list-style: none;
+}
+/* .layout{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 255, 255, 0.267);
+}
+
+.layout_Left{
+    width: 12%;
+    max-width: 200px;
+    background-color: rgb(99, 99, 99);
+    color: #fff;
+} */
+.serviceMenuGroup{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.serviceMenuGroup p{
+    font-weight: bold;
+}
+
+.serviceMenuItem{
+    position: relative;
+    display: block;
+    background-color: rgb(9, 161, 221);
+    border: 2px solid #fff;
+    border-radius: 7px !important;
+    -webkit-border-radius: 7px !important;
+    -moz-border-radius: 7px !important;
+    -ms-border-radius: 7px !important;
+    -o-border-radius: 7px !important;
+}
+.serviceMenuGroup .serviceMenuItem:nth-child(1){
+    background-color: #21e6c1;
+}
+.serviceMenuGroup .serviceMenuItem:nth-child(2){
+    background-color: #278ea5;
+}
+.serviceMenuGroup .serviceMenuItem:nth-child(3){
+    background-color: #49a942;
+}
+.serviceMenuGroup .serviceMenuItem:nth-child(4){
+    background-color: #49176d;
+}
+.serviceMenuGroup .serviceMenuItem:nth-child(5){
+    background-color: #f85a40;
+}
+.serviceMenuGroup .serviceMenuItem:nth-child(6){
+    background-color: #ffa45c;
+}
+.serviceMenuItemNext{
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+.serviceMenuIcon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #153d3a6e;
+}
+.serviceMenuIcon i{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whiteDark{
+    background-color: #fff;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.pieChartGroup{
+    border-right: 5px solid #e7e7e7;
+
+}
+.chartInformation{
+    display: block;
+}
+.chartInformationItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.chartInformationItemLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.color{
+    width: 10px;
+    height: 10px;
+}
+.chartInformation .chartInformationItem:nth-child(1) .color{
+    background-color: #fc5185;
+}
+.chartInformation .chartInformationItem:nth-child(2) .color{
+    background-color: #364f6b;
+}
+.chartInformation .chartInformationItem:nth-child(3) .color{
+    background-color: #43dde6;
+}
+.chartInformation .chartInformationItem:nth-child(4) .color{
+    background-color: #fc5185;
+}
+
+.accordion{
+    display: flex !important;
+    margin: 10px 0;
+    gap: 10px;
+}
+.accordion-button, .accordion-item{
+    background-color: transparent !important;
+    color: #fff;
+    border: 0px solid transparent;
+}
+.accordion-button{
+    padding: 10px 5px;
+}
+
+.nidVerifyClass{
+    background-color: rgb(250, 250, 250);
+}
+.appBTN{
+    background-color: #FF6E41;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    width: fit-content;
+    padding: 7px 45px;
+}
+input{
+    /* background-color: #323136 !important; */
+    /* border: 2px solid #69696C !important; */
+    border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
+    color: #000000 !important;
+}
+
+.tabsUL{
+    display: flex;
+}
+
+.b-tab {
+    display: none;
+  }
+  
+  .b-tab.active {
+    display: block;
+  }
+  
+  .b-nav-tab {
+    display: inline-block;
+    cursor: pointer;
+    padding: 7px 15px !important;
+  }
+  
+  .b-nav-tab.active {
+    background-color: #364f6b;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #ffffff !important;
+}
+
+.pieChartGroup{
+    /* width: 300px; */
+}

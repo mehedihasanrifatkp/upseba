@@ -1,0 +1,10 @@
+diff a/assment-list.html b/assment-list.html	(rejected hunks)
+@@ -10,6 +10,8 @@
+ 	<meta name="viewport" content="width=device-width,initial-scale=1">
+ 	<meta name="csrf-token" content="Fsr6GNPiZQyL6yLwdANKyyZBVafWJZziwN1ZlqP7">
+ 	<meta name="description" content="Some description for the page" />
++	<meta property="og:title" content="Zenix - Crypto Laravel Admin Dashboard" />
++	<meta property="og:description" content="Zenix | Dashboard Light" />
+ 	<meta property="og:image" content="../social-image.png" />
+ 	<meta name="format-detection" content="telephone=no">
+ 	<title>Assment List</title>

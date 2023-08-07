@@ -1,0 +1,105 @@
+
+@media only screen and (max-width: 991px) {
+    .Destop , .headerright .headerRightsite{
+        display: none;
+    }
+    .mobileView_LoginAre{
+        display: flex !important;
+    }
+
+    #manuID ul li .submanu {
+        position: unset;
+        width: 100%;
+    }
+
+    #manuID ul li {
+        /* width: 100%; */
+    }
+    #manuID ul li a{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #manuID .collapse .headerRightsite li a{
+        display: unset;
+    }
+
+    .collapse .headerRightsite{
+        justify-content: center !important;
+        /* padding: 50px 0; */
+    }
+    .collapse .headerRightsite li{
+        background-color: #009FE3 !important;
+    }
+    .serviceGroup button{
+        width: 160px;
+        height: 160px;
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .bannerDes{
+        width: 100%;
+        text-align: center;
+        padding: 80px 0;
+    }
+    .bannerDes h1{
+        font-size: 40px;
+    }
+    .bannerDes h3{
+        font-size: 20px;
+    }
+    #bannerID{
+        background-image: url("../img/mobileBanner.png");
+        background-position: right center;
+    }
+    .bannerDes h1{
+        color: #fff;
+    }
+    .bannerDes h3{
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .serviceGroup button{
+        width: 143px;
+        height: 143px;
+    }
+    .serviceGroup{
+        gap: 17px 7px;
+    }
+    .serviceGroup p{
+        font-size: 14px;
+    }
+    .serviceItem img {
+        width: 30px;
+        height: 30px;
+    }
+    .modalForm{
+        grid-template-columns: 1fr;
+        gap: 3px;
+    }
+    .bannerWarp img {
+        width: 100%;
+        height: 40vh;
+    }
+    .lockImg{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 424px) {
+    .collapse .headerRightsite{
+        display: block;
+    }
+    .mobileView_LoginAre li a span{
+        font-size: 14px !important;
+    }
+    .mobileView_LoginAre li{
+        margin: 3px;
+    }
+}
