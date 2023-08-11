@@ -21332,7 +21332,7 @@ button {
 
 .btn-primary {
   border-color: var(--primary);
-  background-color: var(--primary); }
+  background-color: #4a02ff; }
   .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
     border-color: var(--primary-hover);
     background-color: var(--primary-hover); }
@@ -27595,7 +27595,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   padding-right: 9.375rem; }
 
 :root {
-  --primary: #02ff85;
+  --primary: #2800ff;
   --secondary: #6418C3;
   --primary-hover: #e66025;
   --primary-light: #fbe5dc;
@@ -28431,7 +28431,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   color: #f9f9f9; }
 
 [data-theme-version="dark"] .deznav .metismenu > li:hover > a, [data-theme-version="dark"] .deznav .metismenu > li:focus > a, [data-theme-version="dark"] .deznav .metismenu > li.mm-active > a {
-  color: var(--primary); }
+  color: #ffffff; }
   [data-theme-version="dark"] .deznav .metismenu > li:hover > a::after, [data-theme-version="dark"] .deznav .metismenu > li:focus > a::after, [data-theme-version="dark"] .deznav .metismenu > li.mm-active > a::after {
     border-color: #fff; }
   [data-theme-version="dark"] .deznav .metismenu > li:hover > a i, [data-theme-version="dark"] .deznav .metismenu > li:focus > a i, [data-theme-version="dark"] .deznav .metismenu > li.mm-active > a i {
