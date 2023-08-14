@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="robots" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="Some description for the page" />
+	<meta property="og:image" content="../social-image.png" />
+	<meta name="format-detection" content="telephone=no">
+	<title>মৃত্যু সনদের আবেদন ফরম</title>
+	<!-- Favicon icon -->
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<link rel="icon" type="image/png" sizes="16x16" href="public/images/favicon.png">
+	<link href="public/vendor/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+	<link href="public/vendor/clockpicker/css/bootstrap-clockpicker.min.css" rel="stylesheet" type="text/css" />
+	<link href="public/vendor/jquery-asColorPicker/css/asColorPicker.min.css" rel="stylesheet" type="text/css" />
+	<link href="public/vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+		rel="stylesheet" type="text/css" />
+	<link href="public/vendor/pickadate/themes/default.css" rel="stylesheet" type="text/css" />
+	<link href="public/vendor/pickadate/themes/default.date.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
+	<link href="public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
+	<link href="public/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+	<!--*******************
+        Preloader start
+    ********************-->
+	<div id="preloader">
+		<div class="sk-three-bounce">
+			<div class="sk-child sk-bounce1"></div>
+			<div class="sk-child sk-bounce2"></div>
+			<div class="sk-child sk-bounce3"></div>
+		</div>
+	</div>
+	<!--*******************
+        Preloader end
+    ********************-->
+	<!--**********************************
+        Main wrapper start
+    ***********************************-->
+	<div id="main-wrapper">
+
+		<!--**********************************
+            Nav header start
+        ***********************************-->
+		<div class="nav-header">
+			<a href="index.html" class="brand-logo">
+				<img src="public/images/Untitled-2.jpg" alt="" class="img-fluid">
+			</a>
+			<div class="nav-control">
+				<div class="hamburger">
+					<span class="line"></span><span class="line"></span><span class="line"></span>
+				</div>
+			</div>
+		</div>
+		<!--**********************************
+            Nav header end
+        ***********************************-->
+
+		<!--**********************************
+            Header start
+        ***********************************-->
+
+		<!--**********************************
+    Chat box start
+***********************************-->
+		<div class="chatbox">
+			<div class="chatbox-close"></div>
+			<div class="custom-tab-1">
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="tab" href="#notes">Notes</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="tab" href="#alerts">Alerts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" data-bs-toggle="tab" href="#chat">Chat</a>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+		<!--**********************************
+    Chat box End
+***********************************-->
+
+
+
+
+		<!--**********************************
+    Header start
+***********************************-->
+		<div class="header">
+			<div class="header-content">
+				<nav class="navbar navbar-expand">
+					<div class="collapse navbar-collapse justify-content-between">
+						<div class="header-left">
+							<div class="input-group search-area right d-lg-inline-flex d-none">
+								<input type="text" class="form-control" placeholder="Find something here...">
+								<div class="input-group-append">
+									<span class="input-group-text">
+										<a href="javascript:void(0)">
+											<i class="flaticon-381-search-2"></i>
+										</a>
+									</span>
+								</div>
+							</div>
+						</div>
+						<ul class="navbar-nav header-right main-notification">
+							<li class="nav-item dropdown notification_dropdown">
+								<a class="nav-link bell dz-theme-mode" href="#">
+									<i id="icon-light" class="fas fa-sun"></i>
+									<i id="icon-dark" class="fas fa-moon"></i>
+								</a>
+							</li>
+							<li class="nav-item dropdown notification_dropdown">
+								<a class="nav-link bell dz-fullscreen" href="#">
+									<svg id="icon-full" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor"
+										stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+										class="css-i6dzq1">
+										<path
+											d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"
+											style="stroke-dasharray: 37, 57; stroke-dashoffset: 0;"></path>
+									</svg>
+									<svg id="icon-minimize" width="20" height="20" viewBox="0 0 24 24" fill="none"
+										stroke="currentColor" stroke-width="2" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-minimize">
+										<path
+											d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"
+											style="stroke-dasharray: 37, 57; stroke-dashoffset: 0;"></path>
+									</svg>
+								</a>
+							</li>
+							
+							<li class="nav-item dropdown header-profile">
+								<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
+									<img src="public/images/profile/pic1.jpg" width="20" alt="" />
+									<div class="header-info">
+										<span>Mehedi</span>
+										<small>Super Admin</small>
+									</div>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="app-profile.html" class="dropdown-item ai-icon">
+										<svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary"
+											width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+											stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+											<circle cx="12" cy="7" r="4"></circle>
+										</svg>
+										<span class="ms-2">Profile </span>
+									</a>
+									<a href="email-inbox.html" class="dropdown-item ai-icon">
+										<svg id="icon-inbox" xmlns="http://www.w3.org/2000/svg" class="text-success"
+											width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+											stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path
+												d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+											</path>
+											<polyline points="22,6 12,13 2,6"></polyline>
+										</svg>
+										<span class="ms-2">Inbox </span>
+									</a>
+									<a href="page-login.html" class="dropdown-item ai-icon">
+										<svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger"
+											width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+											stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+											<polyline points="16 17 21 12 16 7"></polyline>
+											<line x1="21" y1="12" x2="9" y2="12"></line>
+										</svg>
+										<span class="ms-2">Logout </span>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div class="sub-header">
+					
+				</div>
+			</div>
+		</div>
+		<!--**********************************
+    Header end ti-comment-alt
+***********************************-->
+
+		<!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+		<!--**********************************
+            Sidebar start
+        ***********************************-->
+		<!--**********************************
+	Sidebar start
+***********************************-->
+		<div class="deznav">
+			<div class="deznav-scroll">
+				<!-- <div class="main-profile">
+					<div class="image-bx">
+						<img src="public/images/Untitled-1.jpg" alt="">
+					</div>
+					<h5 class="name"><span class="font-w400"></span> মেহেদী হাসান</h5>
+					<p class="email">info@digitalupseba.com</p>
+				</div> -->
+				<ul class="metismenu" id="menu">
+					<li class="nav-label first">Main Menu</li>
+					<li>
+						<a class="" href="index.html" aria-expanded="false">
+							<i class="uil uil-house-user"></i>
+							ড্যাশবোর্ড
+						</a>
+					</li>
+					<li class="nav-label">সেবা বক্স</li>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="flaticon-077-menu-1"></i>
+							<span class="nav-text">Nid Verification</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="nidVerify.htm">যাচাই</a></li>
+							<li><a href="nid-register.html">রেজিষ্টার</a></li>
+						</ul>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-edit-alt"></i>
+							<span class="nav-text">সহজ আবেদন</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="link.html">লিংক সমূহ</a></li>
+						</ul>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-money-bill"></i>
+							<span class="nav-text">হোল্ডিং ট্যাক্স</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="new-assment.html">নতুন এসেসমেন্ট নিবন্ধন</a></li>
+							<li><a href="assment-list.html">নিবন্ধন কৃত তালিকা</a></li>
+							<li><a href="collection-list.html">হোল্ডিং ট্যাক্স আদায়</a></li>
+							<li><a href="house-list.html">বাসা নির্বাচন</a></li>
+							<li><a href="Invoices-list.html">আগাম রশিদ প্রিন্ট</a></li>
+
+						</ul>
+					</li>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-list-ui-alt"></i>
+							<span class="nav-text">ত্রাণের তালিকা</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="entry-tran.html">সুবিধাভোগী নিবন্ধন</a></li>
+							<li><a href="list-tran.html">তালিকা তৈরি</a></li>
+							<li><a href="register-tran.html">রেজিষ্টার</a></li>
+							<li><a href="print-tranlist.html">তালিকা প্রিন্ট</a></li>
+						</ul>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-map-pin-alt"></i>
+							<span class="nav-text">প্রতিষ্ঠানের ঠিকানা</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="village-list.html">গ্রামের তালিকা</a></li>
+							<li><a href="postoffice-list.html">পোষ্ট অফিস</a></li>
+							<li><a href="ward-list.html">ওয়ার্ড</a></li>
+							<li><a href="unionsetting.html">ইউনিয়ন</a></li>
+							<li><a href="chairman.html">চেয়ারম্যান</a></li>
+							<li><a href="sercetary.html">সচিব</a></li>
+						</ul>
+					</li>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+						<i class="uil uil-life-ring"></i>
+						<span class="nav-text">ড্যাশবোর্ড সমূহ</span>
+					</a>
+					<ul aria-expanded="false">
+						
+						<!-- manu mahadidev7 -->
+						<li><a href="registration.html">
+								রেজিস্ট্রেশন
+							</a></li>
+						<li><a href="Holding_tax_profile.html">
+								হোল্ডিং ট্যাক্স প্রোফাইল
+							</a></li>
+						<li><a href="sonod_profile.html">
+								সনদ প্রোফাইল
+							</a></li>
+						<li><a href="Union_Parishad_Admin_Deshboard2.html">
+								Union Parishad Admin Deshboard2
+							</a></li>
+						<li><a href="login.html">
+								Login
+							</a></li>
+						<li><a href="deshboard_index.html">
+								Deshboard Home
+							</a></li>
+						<li><a href="shongtrioUnion.html">
+								Shongtrio Union
+							</a></li>
+						<li><a href="UnionBitikprativedan.html">
+								UnionBitik Prativedan
+							</a></li>
+						<li><a href="UserManegment.html">
+								User Manegment
+							</a></li>
+					</ul>
+				</li>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-diary"></i>
+							<span class="nav-text">সনদ</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="sonod-list.html">সকল সনদ</a></li>
+							<li><a href="traid.html">ট্রেড লাইসেন্স</a></li>
+							<li><a href="pending-sonod.html">অপেক্ষামান সনদ</a></li>
+						</ul>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-list-ol-alt"></i>
+							<span class="nav-text">তালিকা সমূহ</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="votar-list.html">স্থানীয় ভোটার</a></li>
+							<li><a href="birth-register.html">জন্ম নিবন্ধন</a></li>
+							<li><a href="dead-register.html">মৃত্যু নিবন্ধন</a></li>
+							<li><a href="tran-list.html">খাদ্য বান্দব কমূসূচীর তালিকা</a></li>
+						</ul>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-envelope-alt"></i>
+							<span class="nav-text">মেসেজ</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="sms.html">ট্রেক্স মেসেজ</a></li>
+							<li><a href="sms-history.html">রেজিষ্টার</a></li>
+						</ul>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-registered"></i>
+							<span class="nav-text">রেজিষ্টার</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="sonod-register.html">সনদ রেজিষ্টার</a></li>
+							<li><a href="traid-register.html">ট্রেড লাইসেন্স রেজিষ্টার</a></li>
+							<li><a href="holding-tax-register.html">হোল্ডিং ট্যাক্স রেজিষ্টার</a></li>
+							<li><a href="daly-collection.html">দৌনিক আদায়</a></li>
+						</ul>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-edit"></i>
+							<span class="nav-text">হোল্ডিং ট্যাক্স প্রতিবেদন</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="due-tax-collection.html">বকেয়া ট্যাক্স আদায়</a></li>
+							<li><a href="new-assment-list.html">নতুন এসেসমেন্ট</a></li>
+							<li><a href="invoice.html">আদায় রশিদ</a></li>
+						</ul>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-book-open"></i>
+							<span class="nav-text">প্রতিবেদন</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="report-birth 1month.html">ক্রৈমাসিক জন্ম,মৃত্যু প্রতিবেদন</a></li>
+							<li><a href="report-birth 3month.html">জন্ম/মৃত্যু নিবন্ধন প্রতিবেদন</a></li>
+							<li><a href="traid-history.html">ট্রেড লাইসেন্স</a></li>
+							<li><a href="monthly-sonod-list.html">মাসিক সনদ আবেদন</a></li>
+							<li><a href="recharge-history.html">রিচার্জ</a></li>
+						</ul>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-wallet"></i>
+							<span class="nav-text">ওয়ালেট</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="recharge.html">রিচার্জ</a></li>
+							<li><a href="recharge-history.html">রেজিষ্টার</a></li>
+						</ul>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-book-open"></i>
+							<span class="nav-text">যোগাযোগ</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="mobile-no-admin.html">মোবাইল নং</a></li>
+						</ul>
+						<div class="copyright">
+							<p><strong>Digital Up Seba</strong> © 2021 All Rights Reserved</p>
+							<p class="fs-12">Made with <span class="heart"></span> Digital Up Seba</p>
+						</div>
+			</div>
+		</div>
+		<!--**********************************
+	Sidebar end
+***********************************-->
+		<!--**********************************
+            Sidebar end
+        ***********************************-->
+
+
+
+		<!--**********************************
+            Content body start
+        ***********************************-->
+		<div class="content-body">
+			<!-- row -->
+			<div class="container-fluid">
+				<div class="row page-titles" style="text-align: center;">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item active"><a href="javascript:void(0)">মৃত্যু সনদের আবেদন ফরম</a></li>
+					</ol>
+				</div>
+				<!-- row -->
+				<div class="row">
+
+				</div>
+				<div class="col-12">
+					<div class="card">
+						<div class="card-header">
+							<!-- <h4 class="card-title">কুতুবপুর ইউনিয়ন পরিষদ</h4> -->
+						</div>
+						<div class="card-body">
+							<div class="row form-material">
+
+								<div class="col-xl-3 col-xxl-6 col-md-6">
+									<label class="text-label">প্রতিষ্ঠানটি কোন ওয়ার্ডে অবস্থিত<span style="color: red;">* </span></label>
+									<select data-v-3161f96a="" class="form-control">
+										<option data-v-3161f96a="" value="">
+											নির্বাচন করুন
+										</option>
+										<option data-v-3161f96a="">১</option>
+										<option data-v-3161f96a="">২</option>
+										<option data-v-3161f96a="">৩</option>
+										<option data-v-3161f96a="">৪</option>
+										<option data-v-3161f96a="">৫</option>
+										<option data-v-3161f96a="">৬</option>
+										<option data-v-3161f96a="">৭</option>
+										<option data-v-3161f96a="">৮</option>
+										<option data-v-3161f96a="">৯</option>
+									</select>
+								</div>
+                                <div class="col-xl-2 col-xxl-6 col-md-6">
+									<label class="text-label">প্রতিষ্ঠানটি কোন গ্রামে অবস্থিত <span style="color: red;">* </span></label>
+									<select data-v-3161f96a="" class="form-control">
+										<option data-v-3161f96a="" value="">
+											নির্বাচন করুন
+										</option>
+										<option data-v-3161f96a="">১</option>
+										<option data-v-3161f96a="">২</option>
+										<option data-v-3161f96a="">৩</option>
+										<option data-v-3161f96a="">৪</option>
+										<option data-v-3161f96a="">৫</option>
+										<option data-v-3161f96a="">৬</option>
+										<option data-v-3161f96a="">৭</option>
+										<option data-v-3161f96a="">৮</option>
+										<option data-v-3161f96a="">৯</option>
+									</select>
+								</div>
+                                <div class="col-xl-4 col-xxl-6 col-md-6 mb-3">
+									<label class="text-label">আবেদনকারীর নাম <span style="color: red;"> </span></label>
+									<input type="text" class="form-control input-default"
+										placeholder="আবেদনকারীর সাথে মৃত ব্যক্তির সম্পর্ক">
+								</div>
+								
+								<div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
+									<label class="text-label">আবেদনকারীর সাথে মৃত ব্যক্তির সম্পর্ক <span style="color: red;"> </span></label>
+									<input type="text" class="form-control input-default"
+										placeholder="আবেদনকারীর সাথে মৃত ব্যক্তির সম্পর্ক">
+								</div>
+
+                                <div><div class="row p-2 align-items-end justify-content-center">
+                                    <div class="col-12">
+                                    <p class="text-center py-3">মৃত ব্যক্তির তথ্য</p>
+                                </div>
+								<div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+									<label class="text-label">মৃত্যুর কারণ (বাংলা)<span style="color: red;">* </span></label>
+									<input type="text" class="form-control input-default" placeholder="হোল্ডিং">
+								</div>
+                                <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+									<label class="text-label">মৃুত্যর কারণ (ইংরেজী)<span style="color: red;">* </span></label>
+									<input type="text" class="form-control input-default" placeholder="গ্রাম/মহল্লা">
+								</div>
+                                <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+									<label class="text-label">মৃুত্যর স্থান (বাংলা)<span style="color: red;">* </span></label>
+									<input type="text" class="form-control input-default" placeholder="হোল্ডিং">
+								</div>
+                                <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+									<label class="text-label">মৃত ব্যক্তির নাম (বাংলা)<span style="color: red;">* </span></label>
+									<input type="text" class="form-control input-default" placeholder="গ্রাম/মহল্লা">
+								</div><div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+									<label class="text-label">মৃত ব্যক্তির নাম (ইংরেজী)<span style="color: red;">* </span></label>
+									<input type="text" class="form-control input-default" placeholder="হোল্ডিং">
+								</div>
+                                <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+									<label class="text-label">মৃত ব্যক্তির পিতার নাম (বাংলা)<span style="color: red;">* </span></label>
+									<input type="text" class="form-control input-default" placeholder="গ্রাম/মহল্লা">
+								</div><div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+									<label class="text-label">মৃত ব্যক্তির পিতার নাম (ইংরেজী)<span style="color: red;">* </span></label>
+									<input type="text" class="form-control input-default" placeholder="হোল্ডিং">
+								</div>
+                                <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+									<label class="text-label">মৃত ব্যক্তির মাতার নাম (বাংলা)<span style="color: red;">* </span></label>
+									<input type="text" class="form-control input-default" placeholder="গ্রাম/মহল্লা">
+								</div><div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+									<label class="text-label">মৃত ব্যক্তির মাতার নাম (ইংরেজী)<span style="color: red;">* </span></label>
+									<input type="text" class="form-control input-default" placeholder="হোল্ডিং">
+								</div>
+                                <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+									<label class="text-label">মৃত ব্যক্তির স্বামী/স্ত্রীর নাম (বাংলা)<span style="color: red;">* </span></label>
+									<input type="text" class="form-control input-default" placeholder="গ্রাম/মহল্লা">
+								</div>
+                                <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+									<label class="text-label">মৃত ব্যক্তির স্বামী/স্ত্রীর নাম (ইংরেজী)<span style="color: red;">* </span></label>
+									<input type="text" class="form-control input-default" placeholder="গ্রাম/মহল্লা">
+								</div>
+                                <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+									<label class="text-label">মৃত্যু তারিখ<span style="color: red;">* </span></label>
+									<input type="text" class="form-control input-default" placeholder="গ্রাম/মহল্লা">
+								</div>
+                                
+                                <button type="submit" class="btn me-2 btn-primary">আবেদন</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!--**********************************
+            Content body end
+        ***********************************-->
+
+
+	<!--**********************************
+            Footer start
+        ***********************************-->
+
+	<!--**********************************
+  Footer start
+***********************************-->
+<div class="footer">
+	<div class="copyright">
+		<p>Copyright © Digital Up Seba &amp; Developed by <a href="https://digitalupseba.com/"
+				target="_blank">Digital Up Seba</a> 2021</p>
+	</div>
+</div>
+	<!--**********************************
+  Footer end
+***********************************-->
+	<!--**********************************
+            Footer end
+        ***********************************-->
+
+	<!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+	<!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+
+	</div>
+	<!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+	<!--**********************************
+        Scripts
+    ***********************************-->
+	<script src="public/vendor/global/global.min.js" type="text/javascript"></script>
+	<script src="public/vendor/bootstrap-select/dist/js/bootstrap-select.min.js" type="text/javascript"></script>
+	<script src="public/vendor/moment/moment.min.js" type="text/javascript"></script>
+	<script src="public/vendor/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript"></script>
+	<script src="public/vendor/clockpicker/js/bootstrap-clockpicker.min.js" type="text/javascript"></script>
+	<script src="public/vendor/jquery-asColor/jquery-asColor.min.js" type="text/javascript"></script>
+	<script src="public/vendor/jquery-asGradient/jquery-asGradient.min.js" type="text/javascript"></script>
+	<script src="public/vendor/jquery-asColorPicker/js/jquery-asColorPicker.min.js" type="text/javascript"></script>
+	<script src="public/vendor/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"
+		type="text/javascript"></script>
+	<script src="public/vendor/pickadate/picker.js" type="text/javascript"></script>
+	<script src="public/vendor/pickadate/picker.time.js" type="text/javascript"></script>
+	<script src="public/vendor/pickadate/picker.date.js" type="text/javascript"></script>
+	<script src="public/js/plugins-init/bs-daterange-picker-init.js" type="text/javascript"></script>
+	<script src="public/js/plugins-init/clock-picker-init.js" type="text/javascript"></script>
+	<script src="public/js/plugins-init/jquery-asColorPicker.init.js" type="text/javascript"></script>
+	<script src="public/js/plugins-init/material-date-picker-init.js" type="text/javascript"></script>
+	<script src="public/js/plugins-init/pickadate-init.js" type="text/javascript"></script>
+	<script src="public/js/custom.js" type="text/javascript"></script>
+	<script src="public/js/deznav-init.js" type="text/javascript"></script>
+	<script src="public/js/demo.js" type="text/javascript"></script>
+	<script src="public/js/styleSwitcher.js" type="text/javascript"></script>
+</body>
+
+</html>
