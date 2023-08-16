@@ -21339,7 +21339,7 @@ button {
   background-color: #4a02ff; }
   .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
     border-color: #7be625bf;
-    background-color: #7be625bf; }
+    background-color: #01650bbf; }
   .btn-primary:focus {
     box-shadow: 0 0 0 0.25rem var(--rgba-primary-5); }
   .btn-primary:disabled, .btn-primary.disabled {

@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="utf-8">
-
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
 	<meta name="robots" content="" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta name="csrf-token" content="Fsr6GNPiZQyL6yLwdANKyyZBVafWJZziwN1ZlqP7">
 	<meta name="description" content="Some description for the page" />
 	<meta property="og:image" content="../social-image.png" />
 	<meta name="format-detection" content="telephone=no">
-	<title>ড্যাশবোর্ড</title>
+	<title>নতুন সেবা যোগ করুন</title>
 	<!-- Favicon icon -->
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 	<link rel="icon" type="image/png" sizes="16x16" href="public/images/favicon.png">
-	<link href="public/vendor/chartist/css/chartist.min.css" rel="stylesheet" type="text/css" />
-	<link href="public/vendor/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+	<link href="public/vendor/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+	<link href="public/vendor/clockpicker/css/bootstrap-clockpicker.min.css" rel="stylesheet" type="text/css" />
+	<link href="public/vendor/jquery-asColorPicker/css/asColorPicker.min.css" rel="stylesheet" type="text/css" />
+	<link href="public/vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+		rel="stylesheet" type="text/css" />
+	<link href="public/vendor/pickadate/themes/default.css" rel="stylesheet" type="text/css" />
+	<link href="public/vendor/pickadate/themes/default.date.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
 	<link href="public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
 	<link href="public/css/style.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
 
 	<!--*******************
@@ -38,8 +40,6 @@
 	<!--*******************
         Preloader end
     ********************-->
-
-
 	<!--**********************************
         Main wrapper start
     ***********************************-->
@@ -52,7 +52,6 @@
 			<a href="index.html" class="brand-logo">
 				<img src="public/images/Untitled-2.jpg" alt="" class="img-fluid">
 			</a>
-
 			<div class="nav-control">
 				<div class="hamburger">
 					<span class="line"></span><span class="line"></span><span class="line"></span>
@@ -84,6 +83,7 @@
 						<a class="nav-link active" data-bs-toggle="tab" href="#chat">Chat</a>
 					</li>
 				</ul>
+				
 			</div>
 		</div>
 		<!--**********************************
@@ -140,9 +140,9 @@
 							
 							<li class="nav-item dropdown header-profile">
 								<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
-									<img src="https://dev.digitalupseba.com/storage/app/DATA/SIGNATUREAPIDATAFILES/PHOTOS/5111616404.jpg" width="20" alt="" />
+									<img src="public/images/profile/pic1.jpg" width="20" alt="" />
 									<div class="header-info">
-										<span>Mehedi Hasan</span>
+										<span>Mehedi</span>
 										<small>Super Admin</small>
 									</div>
 								</a>
@@ -183,10 +183,7 @@
 					</div>
 				</nav>
 				<div class="sub-header">
-					<div class="d-flex align-items-center flex-wrap me-auto">
-						<h5 class="dashboard_bar">
-							সহজ আবেদন </h5>
-					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -208,7 +205,7 @@
 			<div class="deznav-scroll">
 				<!-- <div class="main-profile">
 					<div class="image-bx">
-						<img src="https://dev.digitalupseba.com/storage/app/DATA/SIGNATUREAPIDATAFILES/PHOTOS/5111616404.jpg" alt="">
+						<img src="public/images/Untitled-1.jpg" alt="">
 					</div>
 					<h5 class="name"><span class="font-w400"></span> মেহেদী হাসান</h5>
 					<p class="email">info@digitalupseba.com</p>
@@ -216,14 +213,10 @@
 				<ul class="metismenu" id="menu">
 					<li class="nav-label first">Main Menu</li>
 					<li>
-						<li>
-							<a class="" href="index.html" aria-expanded="false">
-								<i class="uil uil-house-user"></i>
-								ড্যাশবোর্ড
-							</a>
-						</li>
-					</li>
-
+						<a class="" href="index.html" aria-expanded="false">
+							<i class="uil uil-house-user"></i>
+							ড্যাশবোর্ড
+						</a>
 					</li>
 					<li class="nav-label">সেবা বক্স</li>
 					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
@@ -236,10 +229,10 @@
 						</ul>
 					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="uil uil-edit-alt"></i>
-							<span class="nav-text">অনলাইন সেবা</span>
+							<span class="nav-text">সহজ আবেদন</span>
 						</a>
 						<ul aria-expanded="false">
-							<li><a href="link.html">সেবা সমূহ</a></li>
+							<li><a href="link.html">লিংক সমূহ</a></li>
 						</ul>
 					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="uil uil-money-bill"></i>
@@ -251,6 +244,7 @@
 							<li><a href="collection-list.html">হোল্ডিং ট্যাক্স আদায়</a></li>
 							<li><a href="house-list.html">বাসা নির্বাচন</a></li>
 							<li><a href="Invoices-list.html">আগাম রশিদ প্রিন্ট</a></li>
+
 						</ul>
 					</li>
 					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
@@ -329,7 +323,7 @@
 							<li><a href="votar-list.html">স্থানীয় ভোটার</a></li>
 							<li><a href="birth-register.html">জন্ম নিবন্ধন</a></li>
 							<li><a href="dead-register.html">মৃত্যু নিবন্ধন</a></li>
-							<li><a href="register-tran.html">খাদ্য বান্দব কমূসূচীর তালিকা</a></li>
+							<li><a href="tran-list.html">খাদ্য বান্দব কমূসূচীর তালিকা</a></li>
 						</ul>
 					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="uil uil-envelope-alt"></i>
@@ -388,9 +382,6 @@
 							<p><strong>Digital Up Seba</strong> © 2021 All Rights Reserved</p>
 							<p class="fs-12">Made with <span class="heart"></span> Digital Up Seba</p>
 						</div>
-					</li>
-				</div>		
-	
 			</div>
 		</div>
 		<!--**********************************
@@ -407,238 +398,107 @@
         ***********************************-->
 		<div class="content-body">
 			<!-- row -->
-
 			<div class="container-fluid">
-				<div class="container-fluid">
-                    <div class="col-xl-12">
-						<div class="card">
-							<div class="card-body d-flex justify-content-between align-items-center">
-								<div>
-									<h4>কুতুবপুর ইউনিয়ন পরিষদ</h4>
-								</div>
-								<a href="new_link_add.html" class="btn btn-info light">+ যোগ করুন</a>
-							</div>
-						</div>
-					</div>
-				<div class="row">
-					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
-						<div class="widget-stat card">
-							<div class="card-body p-4">
-								<div class="media ai-icon">
-									<span class="me-3 bgl-warning text-warning">
-										<img src="public/images/logo/ec.png"" alt="" class="img-fluid">
-										<script>
-											function openWin() {
-											  window.open("https://services.nidw.gov.bd/nid-pub/");
-											}
-										</script>
-									</span>
-									<div class="media-body">
-										<input class="btn me-2 btn-info" type="button" value="নির্বাচন কমিশন" onclick="openWin()">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
-						<div class="widget-stat card">
-							<div class="card-body p-4">
-								<div class="media ai-icon">
-									<span class="me-3 bgl-warning text-warning">
-										<img src="public/images/logo/bangladesh-police copy.png"" alt="" class="img-fluid">
-										<script>
-											function openWin() {
-											  window.open("https://pcc.police.gov.bd/ords/f?p=500:1::::::");
-											}
-											</script>
-									</span>
-									<div class="media-body">
-										<input class="btn me-2 btn-info" type="button" value="পুলিশ ক্লিলিয়ারেন্স" onclick="openWin()">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					
-					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
-						<div class="widget-stat card">
-							<div class="card-body p-4">
-								<div class="media ai-icon">
-									<span class="me-3 bgl-warning text-warning">
-										<img src="public/images/logo/bdris.jpg"" alt="" class="img-fluid">
-										<script>
-											function openWin() {
-											  window.open("https://bdris.gov.bd");
-											}
-											</script>
-									</span>
-									<div class="media-body">
-										<input class="btn me-2 btn-info" type="button" value="জন্ম নিবন্ধন" onclick="openWin()">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
-						<div class="widget-stat card">
-							<div class="card-body p-4">
-								<div class="media ai-icon">
-									<span class="me-3 bgl-warning text-warning">
-										<img src="public/images/logo/Bank_Asia_Limited.svg.png"" alt="" class="img-fluid">
-										<script>
-											function openWin() {
-											  window.open("https://agent.bankasia-bd.com:8089/emob/f?p=106:101");
-											}
-											</script>
-									</span>
-									<div class="media-body">
-										<input class="btn me-2 btn-info" type="button" value="ব্যাংক এশিয়া" onclick="openWin()">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					
-					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
-						<div class="widget-stat card">
-							<div class="card-body p-4">
-								<div class="media ai-icon">
-									<span class="me-3 bgl-warning text-warning">
-										<img src="public/images/logo/Bank_Asia_Limited.svg.png"" alt="" class="img-fluid">
-										<script>
-											function openWin() {
-											  window.open("https://agent1.bankasia-bd.com:3000/");
-											}
-											</script>
-									</span>
-									<div class="media-body">
-										<input class="btn me-2 btn-info" type="button" value="E-KYC" onclick="openWin()">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
-						<div class="widget-stat card">
-							<div class="card-body p-4">
-								<div class="media ai-icon">
-									<span class="me-3 bgl-warning text-warning">
-										<img src="public/images/logo/gd.png"" alt="" class="img-fluid">
-										<script>
-											function openWin() {
-											  window.open("http://gd.police.gov.bd/");
-											}
-											</script>
-									</span>
-									<div class="media-body">
-										<input class="btn me-2 btn-info" type="button" value="অনলাইন জিডি" onclick="openWin()">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
-						<div class="widget-stat card">
-							<div class="card-body p-4">
-								<div class="media ai-icon">
-									<span class="me-3 bgl-warning text-warning">
-										<img src="public/images/logo/govt_logo.png" alt="" class="img-fluid">
-										<script>
-											function openWin() {
-											  window.open("https://ldtax.gov.bd/");
-											}
-											</script>
-									</span>
-									<div class="media-body">
-										<input class="btn me-2 btn-info" type="button" value="ভূমি মন্ত্রণালয়" onclick="openWin()">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
-						<div class="widget-stat card">
-							<div class="card-body p-4">
-								<div class="media ai-icon">
-									<span class="me-3 bgl-warning text-warning">
-										<img src="public/images/logo/brta-logo-new.png" alt="" class="img-fluid">
-										<script>
-											function openWin() {
-											  window.open("https://bsp.brta.gov.bd/");
-											}
-											</script>
-									</span>
-									<div class="media-body">
-										<input class="btn me-2 btn-info" type="button" value="বিআরটিএ সেবা বাতায়ন" onclick="openWin()">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
+				<div class="row page-titles" style="text-align: center;">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item active"><a href="javascript:void(0)">নতুন সেবা যোগ করুন</a></li>
+					</ol>
 				</div>
+				<!-- row -->
+				<div class="row">
+
+				</div>
+				<div class="col-12">
+					<div class="card">
+						<div class="card-header">
+							<!-- <h4 class="card-title">কুতুবপুর ইউনিয়ন পরিষদ</h4> -->
+						</div>
+						<div class="card-body">
+							<div class="row form-material">			
+								<div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+									<label class="text-label">ওয়েভসাইটের নাম <span style="color: red;"> </span></label>
+									<input type="text" class="form-control input-default"
+										placeholder="ওয়েভসাইটের নাম">
+								</div>
+                                <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+									<label class="text-label">ওয়েভসাইটের লিংক <span style="color: red;"> </span></label>
+									<input type="text" class="form-control input-default"
+										placeholder="ওয়েভসাইটের লিংক">
+								</div>
+								   <button type="submit" class="btn me-2 btn-primary">সংরক্ষণ</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
-			<!--**********************************
+		</div>
+	</div>
+	<!--**********************************
             Content body end
         ***********************************-->
 
 
-			<!--**********************************
+	<!--**********************************
             Footer start
         ***********************************-->
 
-			<!--**********************************
+	<!--**********************************
   Footer start
 ***********************************-->
-			<div class="footer">
-				<div class="copyright">
-					<p>Copyright © Digital Up Seba &amp; Developed by <a href="https://digitalupseba.com/"
-							target="_blank">Digital Up Seba</a> 2021</p>
-				</div>
-			</div>
-			<!--**********************************
+<div class="footer">
+	<div class="copyright">
+		<p>Copyright © Digital Up Seba &amp; Developed by <a href="https://digitalupseba.com/"
+				target="_blank">Digital Up Seba</a> 2021</p>
+	</div>
+</div>
+	<!--**********************************
   Footer end
 ***********************************-->
-			<!--**********************************
+	<!--**********************************
             Footer end
         ***********************************-->
 
-			<!--**********************************
+	<!--**********************************
            Support ticket button start
         ***********************************-->
 
-			<!--**********************************
+	<!--**********************************
            Support ticket button end
         ***********************************-->
 
 
-		</div>
 	</div>
-
-		<!--**********************************
+	<!--**********************************
         Main wrapper end
     ***********************************-->
 
-		<!--**********************************
+	<!--**********************************
         Scripts
     ***********************************-->
-		<script src="public/vendor/global/global.min.js" type="text/javascript"></script>
-		<script src="public/vendor/bootstrap-select/dist/js/bootstrap-select.min.js" type="text/javascript"></script>
-		<script src="public/vendor/chart.js/Chart.bundle.min.js" type="text/javascript"></script>
-		<script src="vendor/peity/jquery.peity.min.js" type="text/javascript"></script>
-		<script src="public/vendor/apexchart/apexchart.js" type="text/javascript"></script>
-		<script src="public/vendor/owl-carousel/owl.carousel.js" type="text/javascript"></script>
-		<script src="public/js/dashboard/dashboard-1.js" type="text/javascript"></script>
-		<script src="public/js/custom.js" type="text/javascript"></script>
-		<script src="public/js/deznav-init.js" type="text/javascript"></script>
-		<script src="public/js/demo.js" type="text/javascript"></script>
-		<script src="public/js/styleSwitcher.js" type="text/javascript"></script>
+	<script src="public/vendor/global/global.min.js" type="text/javascript"></script>
+	<script src="public/vendor/bootstrap-select/dist/js/bootstrap-select.min.js" type="text/javascript"></script>
+	<script src="public/vendor/moment/moment.min.js" type="text/javascript"></script>
+	<script src="public/vendor/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript"></script>
+	<script src="public/vendor/clockpicker/js/bootstrap-clockpicker.min.js" type="text/javascript"></script>
+	<script src="public/vendor/jquery-asColor/jquery-asColor.min.js" type="text/javascript"></script>
+	<script src="public/vendor/jquery-asGradient/jquery-asGradient.min.js" type="text/javascript"></script>
+	<script src="public/vendor/jquery-asColorPicker/js/jquery-asColorPicker.min.js" type="text/javascript"></script>
+	<script src="public/vendor/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"
+		type="text/javascript"></script>
+	<script src="public/vendor/pickadate/picker.js" type="text/javascript"></script>
+	<script src="public/vendor/pickadate/picker.time.js" type="text/javascript"></script>
+	<script src="public/vendor/pickadate/picker.date.js" type="text/javascript"></script>
+	<script src="public/js/plugins-init/bs-daterange-picker-init.js" type="text/javascript"></script>
+	<script src="public/js/plugins-init/clock-picker-init.js" type="text/javascript"></script>
+	<script src="public/js/plugins-init/jquery-asColorPicker.init.js" type="text/javascript"></script>
+	<script src="public/js/plugins-init/material-date-picker-init.js" type="text/javascript"></script>
+	<script src="public/js/plugins-init/pickadate-init.js" type="text/javascript"></script>
+	<script src="public/js/custom.js" type="text/javascript"></script>
+	<script src="public/js/deznav-init.js" type="text/javascript"></script>
+	<script src="public/js/demo.js" type="text/javascript"></script>
+	<script src="public/js/styleSwitcher.js" type="text/javascript"></script>
 </body>
 
 </html>
