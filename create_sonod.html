@@ -12,7 +12,7 @@
 	<meta name="description" content="Some description for the page" />
 	<meta property="og:image" content="../social-image.png" />
 	<meta name="format-detection" content="telephone=no">
-	<title>ওয়ারিশ সনদ আবেদন ফরম</title>
+	<title>নতুন সনদ তৈরি করুন</title>
 	<!-- Favicon icon -->
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 	<link rel="icon" type="image/png" sizes="16x16" href="public/images/favicon.png">
@@ -316,6 +316,7 @@
 							<li><a href="sonod-list.html">সকল সনদ</a></li>
 							<li><a href="traid.html">ট্রেড লাইসেন্স</a></li>
 							<li><a href="pending-sonod.html">অপেক্ষামান সনদ</a></li>
+                            <li><a href="create_sonod.html">নতুন সনদ তৈরি করুন</a></li>
 						</ul>
 					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="uil uil-list-ol-alt"></i>
@@ -401,11 +402,17 @@
 		<div class="content-body">
 			<!-- row -->
 			<div class="container-fluid">
-				<div class="row page-titles">
-					<ol class="breadcrumb">
-						<li class="breadcrumb-item active"><a href="javascript:void(0)">ওয়ারিশ সনদের আবেদন ফরম</a></li>
-					</ol>
-				</div>
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <div>
+                                <h4>নতুন সনদের নাম তৈরি করুন</h4>
+                            </div>
+                            <a href=" " class="btn btn-info light">+ যোগ করুন</a>
+                        </div>
+                    </div>
+                </div>
+				
 				<!-- row -->
 				<div class="row">
 
@@ -418,156 +425,221 @@
 						<div class="card-body">
 							<div class="row form-material">
 
-								<!-- <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
-									<label class="text-label">ওয়ার্ড <span style="color: red;">* </span></label>
+                                <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
+									<!-- <label class="text-label">   <span style="color: red;">  </span></label> -->
 									<select data-v-3161f96a="" class="form-control">
 										<option data-v-3161f96a="" value="">
-											নির্বাচন করুন
+											সনদের ধরণ নির্বাচন করুন
 										</option>
-										<option data-v-3161f96a="">১</option>
-										<option data-v-3161f96a="">২</option>				
-									</select>
-								</div> -->
-								<div class="col-xl-2 col-xxl-6 col-md-6">
-									<label class="text-label">ওয়ার্ড <span style="color: red;">* </span></label>
-									<select data-v-3161f96a="" class="form-control">
-										<option data-v-3161f96a="" value="">
-											নির্বাচন করুন
-										</option>
-										<option data-v-3161f96a="">১</option>
-										<option data-v-3161f96a="">২</option>
-										<option data-v-3161f96a="">৩</option>
-										<option data-v-3161f96a="">৪</option>
-										<option data-v-3161f96a="">৫</option>
-										<option data-v-3161f96a="">৬</option>
-										<option data-v-3161f96a="">৭</option>
-										<option data-v-3161f96a="">৮</option>
-										<option data-v-3161f96a="">৯</option>
-									</select>
-								</div>
-								<div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
-									<label class="text-label">গ্রাম <span style="color: red;">* </span></label>
-									<select data-v-3161f96a="" class="form-control">
-										<option data-v-3161f96a="" value="">
-											নির্বাচন করুন
-										</option>
-										<option data-v-3161f96a="">এনায়েতপুর</option>
-										<option data-v-3161f96a="">কুতুবপুর</option>
-										<option data-v-3161f96a="">কুতুবপুর</option>
-										<option data-v-3161f96a="">কুতুবপুর</option>
-										<option data-v-3161f96a="">কুতুবপুর</option>
-										<option data-v-3161f96a="">কুতুবপুর</option>
-										<option data-v-3161f96a="">কুতুবপুর</option>
-										<option data-v-3161f96a="">মীর আহম্মদপুর</option>
-										<option data-v-3161f96a="">আবদুল্যাপুর</option>
-										<option data-v-3161f96a="">কিসমত আবদুল্যাপুর</option>
-										<option data-v-3161f96a="">আলাইয়ারপুর</option>
-									</select>
-								</div>
-								<div class="col-xl-1 col-xxl-6 col-md-6 mb-3">
-									<label class="text-label">লিঙ্গ <span style="color: red;">* </span></label>
-									<select data-v-3161f96a="" class="form-control">
-										<option data-v-3161f96a="" value="">
-											নির্বাচন করুন
-										</option>
-										<option data-v-3161f96a="">পুরুষ</option>
-										<option data-v-3161f96a="">মহিলা</option>
-										<option data-v-3161f96a="">তৃতীয় লিঙ্গ</option>
-										<!-- <option data-v-3161f96a="">আলাইয়ারপুর</option> -->
-									</select>
-								</div>
-                                <div class="col-xl-1 col-xxl-6 col-md-6 mb-3">
-									<label class="text-label">ধর্ম <span style="color: red;">* </span></label>
-									<select data-v-3161f96a="" class="form-control">
-										<option data-v-3161f96a="" value="">
-											নির্বাচন করুন
-										</option>
-										<option data-v-3161f96a="">ইসলাম</option>
-										<option data-v-3161f96a="">সনাতন</option>
-										<option data-v-3161f96a="">খ্রিষ্টান</option>
-										<option data-v-3161f96a="">বৌদ্ধ</option>
-										<option data-v-3161f96a="">অন্যান্য</option>
+                                        <option data-v-3161f96a="">নাগরিক সনদ</option>
+										<option data-v-3161f96a="">চারিত্রিক সনদ</option>
+										<option data-v-3161f96a="">ওয়ারিশ সনদ</option>
+                                        <option data-v-3161f96a="">মৃুত্য সনদ</option>
+                                        <option data-v-3161f96a="">প্রত্যয়ন পত্র</option>
+										<option data-v-3161f96a="">ট্রেড লাইসেন্স</option>
+                                        <option data-v-3161f96a="">খামার প্রত্যয়ন</option>
+										<option data-v-3161f96a="">কৃষি প্রত্যয়ন</option>
+										<option data-v-3161f96a="">পারিবারিক সনদ</option>
+										<option data-v-3161f96a="">এতিম সনদ</option>
+                                        <option data-v-3161f96a="">একই নামের প্রত্যয়ন</option>
+                                        <option data-v-3161f96a="">বাৎসরিক/মাসিক আয়ের প্রত্যয়ন</option>
+										<option data-v-3161f96a="">নতুন ভোটার প্রত্যয়ন</option>
 									</select>
 								</div>
 
-								<div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
-									<label class="text-label">মৃত্যু সনদ নং <span style="color: red;"> </span></label>
-									<input type="text" class="form-control input-default"
-										placeholder="মৃত্যু সনদ নং">
-								</div>
-
-								<div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
-									<label class="text-label">মৃত্যু তারিখ <span style="color: red;">  </span></label>
-									<input type="text" class="form-control input-default"
-										placeholder="মৃত্যু তারিখ">
-								</div>
-								<div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
-									<label class="text-label">মৃত ব্যক্তির নাম <span style="color: red;">* </span></label>
-									<input type="text" class="form-control input-default" placeholder="মৃত ব্যক্তির নাম">
-								</div>
-                                <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
-									<label class="text-label">পিতা <span style="color: red;">* </span></label>
-									<input type="text" class="form-control input-default" placeholder="পিতা">
-								</div>
-                                <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
-									<label class="text-label">মাতা<span style="color: red;">* </span></label>
-									<input type="text" class="form-control input-default" placeholder="মাতা">
-								</div>
-                                <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
-									<label class="text-label">স্বামী/স্ত্রী<span style="color: red;"> * </span></label>
-									<input type="text" class="form-control input-default" placeholder="স্বামী/স্ত্রী">
-								</div>
-                                <div><div class="row p-2 align-items-end justify-content-center">
-                                    <div class="col-12">
-                                    <p class="text-center py-3"><b>ওয়ারিশগণের নাম</b></p>
+                                <div data-v-8821a41a="" class="col-sm-3">
+                                    <div data-v-8821a41a="" class="input-group mb-2">
+                                        <div data-v-8821a41a="" class="input-group-prepend">
+                                            <span data-v-8821a41a="" class="input-group-text">
+                                                নাম বাংলা
+                                            </span>
+                                        </div>
+                                        <input data-v-8821a41a="" type="tel" placeholder="ক্রমিক নং" class="form-control">
+                                    </div>
                                 </div>
-								<div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
-									<label class="text-label">নাম<span style="color: red;">* </span></label>
-									<input type="text" class="form-control input-default" placeholder="নাম">
-								</div>
-                                <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
-									<label class="text-label">জাতীয় পরিচয়পত্র/ জন্ম সনদ নং/পাসপোর্ট<span style="color: red;">  </span></label>
-									<input type="text" class="form-control input-default" placeholder="জাতীয় পরিচয়পত্র/ জন্ম সনদ নং">
-								</div>
-                                <div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
-									<label class="text-label">জন্ম তরিখ<span style="color: red;">  </span></label>
-									<input type="text" class="form-control input-default" placeholder="জন্ম তরিখ">
-								</div>
-                                <div class="col-xl-1 col-xxl-6 col-md-6 mb-3">
-									<label class="text-label">সম্পর্ক <span style="color: red;">* </span></label>
-									<select data-v-3161f96a="" class="form-control">
-										<option data-v-3161f96a="" value="">
-											নির্বাচন করুন
-										</option>
-										<option data-v-3161f96a="">স্বামী</option>
-										<option data-v-3161f96a="">স্ত্রী</option>
-                                        <option data-v-3161f96a="">পিতা</option>
-										<option data-v-3161f96a="">মাতা</option>
-										<option data-v-3161f96a="">পুত্র</option>
-										<option data-v-3161f96a="">কন্যা</option>
-										<option data-v-3161f96a="">ভাই</option>
-										<option data-v-3161f96a="">বোন</option>
-										<option data-v-3161f96a="">অন্যান্য</option>
-									</select>
-								</div>
-								<div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
-									<label class="text-label">মন্তব্য<span style="color: red;">  </span></label>
-									<input type="text" class="form-control input-default" placeholder="মন্তব্য">
-								</div>
-                                <div class="col-xl-1 col-xxl-6 col-md-6 mb-3">
-									<!-- <label class="text-label">মাতা<span style="color: red;">* </span></label> -->
-                                    <button type="submit" class="btn me-2 btn-primary">যোগ করুন</button>
-								</div>
-                                <button type="submit" class="btn me-2 btn-primary">আবেদন</button>
-								</div>
-							</div>
-						</div>
+                                <div data-v-8821a41a="" class="col-sm-3">
+                                    <div data-v-8821a41a="" class="input-group mb-2">
+                                        <div data-v-8821a41a="" class="input-group-prepend">
+                                            <span data-v-8821a41a="" class="input-group-text">
+                                                নাম ইংরেজী
+                                            </span>
+                                        </div>
+                                        <input data-v-8821a41a="" type="tel" placeholder="ক্রমিক নং" class="form-control">
+                                    </div>
+                                </div>
+                                <div data-v-8821a41a="" class="col-sm-3">
+                                    <div data-v-8821a41a="" class="input-group mb-2">
+                                        <div data-v-8821a41a="" class="input-group-prepend">
+                                            <span data-v-8821a41a="" class="input-group-text">
+                                                পিতার নাম বাংলা 
+                                            </span>
+                                        </div>
+                                        <input data-v-8821a41a="" type="tel" placeholder="ক্রমিক নং" class="form-control">
+                                    </div>
+                                </div>
+                                <div data-v-8821a41a="" class="col-sm-3">
+                                    <div data-v-8821a41a="" class="input-group mb-2">
+                                        <div data-v-8821a41a="" class="input-group-prepend">
+                                            <span data-v-8821a41a="" class="input-group-text">
+                                                পিতার নাম ইংরেজী
+                                            </span>
+                                        </div>
+                                        <input data-v-8821a41a="" type="tel" placeholder="ক্রমিক নং" class="form-control">
+                                    </div>
+                                </div>
+                                <div data-v-8821a41a="" class="col-sm-3">
+                                    <div data-v-8821a41a="" class="input-group mb-2">
+                                        <div data-v-8821a41a="" class="input-group-prepend">
+                                            <span data-v-8821a41a="" class="input-group-text">
+                                                মাতার নাম বাংলা 
+                                            </span>
+                                        </div>
+                                        <input data-v-8821a41a="" type="tel" placeholder="ক্রমিক নং" class="form-control">
+                                    </div>
+                                </div>
+                                <div data-v-8821a41a="" class="col-sm-3">
+                                    <div data-v-8821a41a="" class="input-group mb-2">
+                                        <div data-v-8821a41a="" class="input-group-prepend">
+                                            <span data-v-8821a41a="" class="input-group-text">
+                                                মাতার নাম ইংরেজী
+                                            </span>
+                                        </div>
+                                        <input data-v-8821a41a="" type="tel" placeholder="ক্রমিক নং" class="form-control">
+                                    </div>
+                                </div>
+                                <div data-v-8821a41a="" class="col-sm-3">
+                                    <div data-v-8821a41a="" class="input-group mb-2">
+                                        <div data-v-8821a41a="" class="input-group-prepend">
+                                            <span data-v-8821a41a="" class="input-group-text">
+                                                স্বামী/স্ত্রীর নাম বাংলা
+                                            </span>
+                                        </div>
+                                        <input data-v-8821a41a="" type="tel" placeholder="ক্রমিক নং" class="form-control">
+                                    </div>
+                                </div>
+                                <div data-v-8821a41a="" class="col-sm-3">
+                                    <div data-v-8821a41a="" class="input-group mb-2">
+                                        <div data-v-8821a41a="" class="input-group-prepend">
+                                            <span data-v-8821a41a="" class="input-group-text">
+                                                স্বামী/স্ত্রীর নাম ইংরেজী
+                                            </span>
+                                        </div>
+                                        <input data-v-8821a41a="" type="tel" placeholder="ক্রমিক নং" class="form-control">
+                                    </div>
+                                </div>
+                                <div data-v-8821a41a="" class="col-sm-3">
+                                    <div data-v-8821a41a="" class="input-group mb-2">
+                                        <div data-v-8821a41a="" class="input-group-prepend">
+                                            <span data-v-8821a41a="" class="input-group-text">
+                                                জন্ম সনদ নং
+                                            </span>
+                                        </div>
+                                        <input data-v-8821a41a="" type="tel" placeholder="ক্রমিক নং" class="form-control">
+                                    </div>
+                                </div>
+                                <div data-v-8821a41a="" class="col-sm-3">
+                                    <div data-v-8821a41a="" class="input-group mb-2">
+                                        <div data-v-8821a41a="" class="input-group-prepend">
+                                            <span data-v-8821a41a="" class="input-group-text">
+                                                জাতীয় পরিচয় পত্র নং
+                                            </span>
+                                        </div>
+                                        <input data-v-8821a41a="" type="tel" placeholder="ক্রমিক নং" class="form-control">
+                                    </div>
+                                </div>
+                                <div data-v-8821a41a="" class="col-sm-3">
+                                    <div data-v-8821a41a="" class="input-group mb-2">
+                                        <div data-v-8821a41a="" class="input-group-prepend">
+                                            <span data-v-8821a41a="" class="input-group-text">
+                                                পাসপোর্ট নং
+                                            </span>
+                                        </div>
+                                        <input data-v-8821a41a="" type="tel" placeholder="ক্রমিক নং" class="form-control">
+                                    </div>
+                                </div>
+                                <div data-v-8821a41a="" class="col-sm-3">
+                                    <div data-v-8821a41a="" class="input-group mb-2">
+                                        <div data-v-8821a41a="" class="input-group-prepend">
+                                            <span data-v-8821a41a="" class="input-group-text">
+                                                বাসা/হোল্ডিং
+                                            </span>
+                                        </div>
+                                        <input data-v-8821a41a="" type="tel" placeholder="ক্রমিক নং" class="form-control">
+                                    </div>
+                                </div>
+                                <div data-v-8821a41a="" class="col-sm-3">
+                                    <div data-v-8821a41a="" class="input-group mb-2">
+                                        <div data-v-8821a41a="" class="input-group-prepend">
+                                            <span data-v-8821a41a="" class="input-group-text">
+                                                জন্ম তারিখ
+                                            </span>
+                                        </div>
+                                        <input data-v-8821a41a="" type="tel" placeholder="ক্রমিক নং" class="form-control">
+                                    </div>
+                                </div>
+                                <div data-v-8821a41a="" class="col-sm-3">
+                                    <div data-v-8821a41a="" class="input-group mb-2">
+                                        <div data-v-8821a41a="" class="input-group-prepend">
+                                            <span data-v-8821a41a="" class="input-group-text">
+                                                পাসপোর্ট নং
+                                            </span>
+                                        </div>
+                                        <input data-v-8821a41a="" type="tel" placeholder="ক্রমিক নং" class="form-control">
+                                    </div>
+                                </div>
+                                <div data-v-8821a41a="" class="col-sm-3">
+                                    <div data-v-8821a41a="" class="input-group mb-2">
+                                        <div data-v-8821a41a="" class="input-group-prepend">
+                                            <span data-v-8821a41a="" class="input-group-text">
+                                                স্থায়ী ঠিকানা
+                                            </span>
+                                        </div>
+                                        <input data-v-8821a41a="" type="tel" placeholder="ক্রমিক নং" class="form-control">
+                                    </div>
+                                </div>
+                                <div data-v-8821a41a="" class="col-sm-3">
+                                    <div data-v-8821a41a="" class="input-group mb-2">
+                                        <div data-v-8821a41a="" class="input-group-prepend">
+                                            <span data-v-8821a41a="" class="input-group-text">
+                                                বর্তমান ঠিকানা
+                                            </span>
+                                        </div>
+                                        <input data-v-8821a41a="" type="tel" placeholder="ক্রমিক নং" class="form-control">
+                                    </div>
+                                </div>
+                                <div data-v-8821a41a="" class="col-sm-3">
+                                    <div data-v-8821a41a="" class="input-group mb-2">
+                                        <div data-v-8821a41a="" class="input-group-prepend">
+                                            <span data-v-8821a41a="" class="input-group-text">
+                                                ভোটার না হওয়ার কারণ
+                                            </span>
+                                        </div>
+                                        <input data-v-8821a41a="" type="tel" placeholder="ক্রমিক নং" class="form-control">
+                                    </div>
+                                </div>
+                                <div data-v-8821a41a="" class="col-sm-3">
+                                    <div data-v-8821a41a="" class="input-group mb-2">
+                                        <div data-v-8821a41a="" class="input-group-prepend">
+                                            <span data-v-8821a41a="" class="input-group-text">
+                                                ভোটার স্থানান্তর হওয়ার কারণ
+                                            </span>
+                                        </div>
+                                        <input data-v-8821a41a="" type="tel" placeholder="ক্রমিক নং" class="form-control">
+                                    </div>
+                                </div>
+                                
+
+                                 
+                            </div>
 					</div>
 				</div>
 
 			</div>
 		</div>
 	</div>
+
+
+    
 	<!--**********************************
             Content body end
         ***********************************-->
