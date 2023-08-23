@@ -191,11 +191,12 @@ a:hover {
     outline: 0;
     text-decoration: none;
 }
-hr {
-    border: 0;
-    border-top: 1px solid #eee;
-    border-bottom: 0
-}
+[data-theme-version="dark"] {
+    background: #2C254A;
+    color: #ffffff;
+    --nav-headbg: #3B3363;
+    --sidebar-bg: #3B3363;
+    --headerbg: #3B3363; }
 code {
     border: 1px solid #e1e1e1;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
