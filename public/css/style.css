@@ -1054,7 +1054,8 @@ progress {
     width: 41.66667%; }
   .col-md-6 {
     flex: 0 0 auto;
-    width: 50%; }
+    width: 50%;
+     }
   .col-md-7 {
     flex: 0 0 auto;
     width: 58.33333%; }
@@ -24463,7 +24464,7 @@ table.dataTable.display tbody td {
 .authincation-content {
   background: #fff;
   box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.15);
-  border-radius: 5px; }
+  border-radius: 25px; }
   [data-theme-version="dark"] .authincation-content {
     background: #3B3363;
     box-shadow: none; }
@@ -24517,7 +24518,8 @@ table.dataTable.display tbody td {
           padding: 0px 7px; }
 
 .auth-form {
-  padding: 50px 50px; }
+  padding: 50px 50px;
+  }
   @media only screen and (max-width: 575px) {
     .auth-form {
       padding: 30px; } }

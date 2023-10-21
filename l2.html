@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Login page  -->
+    <section class="full-page">
+        <div class="side-img">
+            <img style="width: 400px;" src="images/login-side.png" alt="">
+        </div>
+        <div>
+            <!-- login form area  -->
+            <div id="login-form" class="login">
+                <h1>দ্রুত আবেদন সিষ্টেম এ <br> <span style="color: rgb(3, 3, 88);">আপনাকে স্বাগতম</span></h1>
+                <form>
+                    <h4>লগইন করুন</h4>
+                    <label class="label"><span class="label-text">মোবাইল</span></label>
+                    <input type="text" placeholder="মোবাইল লিখুন">
+                    <label class="label"><span class="label-text">পিন</span></label>
+                    <input type="password" placeholder="পিন লিখুন">
+                    <label class="label">
+                        <a href="" class="forgat-pass">পাসওয়ার্ড ভুলে গেছেন?</a>
+                    </label>
+                    <button class="login-btn">লগইন</button>
+                    <h5>একাউন্ট নেই?<span style="cursor: pointer; color: rgb(5, 5, 149);"
+                            onclick="showSignupFrom()">রেজিস্টার করুন</span></h5>
+                </form>
+            </div>
+            <!-- login form area end -->
+
+
+            <!-- sign up form  -->
+            <div id="signup-form">
+                <h2 style="color: #4502a5;margin-bottom: 30px;">রেজিস্ট্রার</h2>
+                <form class="form">
+
+                    <span class="w-half">
+                        <label class="label"><span class="label-text">মোবাইল নাম্বার</span></label>
+                        <input type="text" placeholder="মোবাইল নাম্বার লিখুন">
+                    </span>
+                    <span>
+                        <label class="label"><span class="label-text">এনআইডি নাম্বার</span></label>
+                        <input type="text" placeholder="এনআইডি নাম্বার লিখুন">
+                    </span>
+                    <span class="w-half">
+                        <label class="label"><span class="label-text">ব্যবহারকারীর ধরন</span></label>
+                        <input type="text" placeholder="ব্যবহারকারীর ধরন লিখুন">
+                    </span>
+                    <span class="w-half">
+                        <label class="label"><span class="label-text">জন্ম তারিখ</span></label>
+                        <input type="text" placeholder="তারিখ-মাস-সাল">
+                    </span>
+                    <label class="label"><span class="label-text">ঠিকানা</span></label>
+                    <span></span>
+                    <span class="w-half">
+                        <input type="text" placeholder="বিভাগ">
+                    </span>
+                    <span class="w-half">
+                        <input type="text" placeholder="উপজেলা">
+                    </span>
+                    <span class="w-half">
+                        <input type="text" placeholder="জেলা">
+                    </span>
+                    <span class="w-half">
+                        <input type="text" placeholder="ইউনিয়ন">
+                    </span>
+                    <label class="label"><span class="label-text">পিন</span></label>
+                    <span></span>
+                    <input type="text" placeholder="পিন দিন">
+                    <input type="text" placeholder="পুনরায় পিন দিন">
+                    <button class="signup-btn">নিবন্ধন</button>
+                </form>
+            </div>
+            <!-- sign up form end -->
+        </div>
+
+
+    </section>
+    <!-- Login page End -->
+
+    <script>
+        const signupForm = document.getElementById('signup-form');
+        const loginForm = document.getElementById('login-form');
+        function showSignupFrom() {
+            signupForm.style.display = 'block';
+            loginForm.style.display = 'none';
+            loginForm.style.background = 'red';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,72 +1,149 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-    <meta name="robots" content="" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
-    <title>Zenix | Page Login</title>
-    <meta name="description" content="Some description for the page"/>
-    <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="public/images/favicon.png">
-    <link href="public/css/style.css" rel="stylesheet">
-</head>
-<body class="vh-100">
-    <div class="authincation h-100">
-        <div class="container h-100">
-            <div class="row justify-content-center h-100 align-items-center">
-			    <div class="col-md-6">
-        <div class="authincation-content">
-            <div class="row no-gutters">
-                <div class="col-xl-12">
-                    <div class="auth-form">
-    					<div class="text-center mb-3">
-    						<img src="logo" alt="">
-    					</div>
-                        <h4 class="text-center mb-4">Sign in your account</h4>
-                        <form action="https://zenix.dexignzone.com/laravel/demo/index">
-                            <div class="form-group">
-                                <label class="mb-1"><strong>Email</strong></label>
-                                <input type="email" class="form-control" value="hello@example.com">
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="" />
+	    <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>নাগরিক নিবন্ধন</title>
+        <!-- Favicon icon -->
+        <link href="public/css/style.css" rel="stylesheet">
+    </head>
+    <body class="vh-100">
+        <div class="authincation h-100">
+            <div class="container h-100">
+                <div class="row justify-content-center h-100 align-items-center">
+                    <div class="col-md-10">
+            <div class="authincation-content">
+                <div class="row no-gutters">
+                    <div class="col-xl-12">
+                        <div class="auth-form">
+                            <div class="text-center mb-3">
+                                <img src="logo" alt="">
                             </div>
-                            <div class="form-group">
-                                <label class="mb-1"><strong>Password</strong></label>
-                                <input type="password" class="form-control" value="Password">
-                            </div>
-                            <div class="form-row d-flex justify-content-between mt-4 mb-2">
-                                <div class="form-group">
-                                   <div class="custom-control custom-checkbox ms-1">
-    									<input type="checkbox" class="form-check-input" id="basic_checkbox_1">
-    									<label class="form-check-label" for="basic_checkbox_1">Remember my preference</label>
-    								</div>
+                            <h4 class="text-center mb-4">নাগরিক নিবন্ধন</h4>
+                            <div class="row form-material">
+                                <div class="row form-material">
+                                    <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+                                        <label class="text-label">বিভাগ <span style="color: red;">* </span></label>
+                                        <select data-v-3161f96a="" class="form-control">
+                                            <option data-v-3161f96a="" value="">
+                                                নির্বাচন করুন
+                                            </option>
+                                            <option data-v-3161f96a="">1</option>
+                                            <option data-v-3161f96a="">2</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+                                        <label class="text-label">জেলা <span style="color: red;">* </span></label>
+                                        <select data-v-3161f96a="" class="form-control">
+                                            <option data-v-3161f96a="" value="">
+                                                নির্বাচন করুন
+                                            </option>
+                                            <option data-v-3161f96a="">1</option>
+                                            <option data-v-3161f96a="">2</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+                                        <label class="text-label">উপজেলা <span style="color: red;">* </span></label>
+                                        <select data-v-3161f96a="" class="form-control">
+                                            <option data-v-3161f96a="" value="">
+                                                নির্বাচন করুন
+                                            </option>
+                                            <option data-v-3161f96a="">1</option>
+                                            <option data-v-3161f96a="">2</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+                                        <label class="text-label">ইউনিয়/পৌরসভা <span style="color: red;">* </span></label>
+                                        <select data-v-3161f96a="" class="form-control">
+                                            <option data-v-3161f96a="" value="">
+                                                নির্বাচন করুন
+                                            </option>
+                                            <option data-v-3161f96a="">1</option>
+                                            <option data-v-3161f96a="">2</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+                                        <label class="text-label">জাতীয় পরিচয় পত্র নং <span style="color: red;">  </span></label>
+                                        <input enavle="disabled" v-model="form.phone" maxlength="17" type="text" class="form-control input-default"
+                                            placeholder=" example 5821639253">
+                                    </div>
+                                    <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+                                        <label class="text-label">জন্ম সনদ নং <span style="color: red;">  </span></label>
+                                        <input enavle="disabled" v-model="form.phone" maxlength="17" type="text" class="form-control input-default"
+                                            placeholder=" example 5821639253">
+                                    </div>
+                                    <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+                                        <label class="text-label">জন্ম তারিখ <span style="color: red;">  </span></label>
+                                        <input enavle="disabled" type="date" class="form-control input-default"
+                                            placeholder=" example 5821639253">
+                                    </div>
+                                    <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+                                        <label class="text-label"> নাম বাংলা <span style="color: red;">* </span></label>
+                                        <input enavle="disabled" type="text" class="form-control input-default"
+                                            placeholder="সেবাগ্রহিতার নাম">
+                                    </div>
+                                    <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+                                        <label class="text-label"> নাম ইংরেজী <span style="color: red;"> </span></label>
+                                        <input enavle="disabled" type="text" class="form-control input-default"
+                                            placeholder="সেবাগ্রহিতার নাম">
+                                    </div>
+                                    <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+                                        <label class="text-label">ওয়ার্ড <span style="color: red;">* </span></label>
+                                        <select data-v-3161f96a="" class="form-control">
+                                            <option data-v-3161f96a="" value="">
+                                                ওয়ার্ড
+                                            </option>
+                                            <option data-v-3161f96a="">1</option>
+                                            <option data-v-3161f96a="">2</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+                                        <label class="text-label">গ্রাম <span style="color: red;">* </span></label>
+                                        <select data-v-3161f96a="" class="form-control">
+                                            <option data-v-3161f96a="" value="">
+                                                গ্রাম
+                                            </option>
+                                            <option data-v-3161f96a="">কুতুবপুর</option>
+                                            <option data-v-3161f96a="">আবদুল্যাপুর</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+                                        <label class="text-label">পোষ্ট অফিস <span style="color: red;">* </span></label>
+                                        <select data-v-3161f96a="" class="form-control">
+                                            <option data-v-3161f96a="" value="">
+                                                পোষ্ট অফিস
+                                            </option>
+                                            <option data-v-3161f96a="">কুতুবপুর</option>
+                                            <option data-v-3161f96a="">আলাইয়ারপুর</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+                                        <label class="text-label" style="">মোবাইল নং <span style="color: red;"> </span></label>
+                                        <input enavle="disabled" type="text" v-model="form.phone" maxlength="11" class="form-control input-default"
+                                            placeholder="মোবাইল নং">
+                                    </div>
+                                    <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+                                        <label class="text-label">ই-মেইল <span style="color: red;"> </span></label>
+                                        <input enavle="disabled" type="text" class="form-control input-default"
+                                            placeholder="ই-মেইল">
+                                    </div>
+                                    <div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+                                        <label class="text-label">পাসওয়ার্ড <span style="color: red;"> </span></label>
+                                        <input enavle="disabled" type="text" class="form-control input-default"
+                                            placeholder="পাসওয়ার্ড">
+                                    </div>
+                                    <div class="col-xl-6 col-xxl-6 col-md-6 mb-3" style="padding-top: 22px;">
+                                        <td data-v-ab5f37bc=""><a data-v-ab5f37bc="" href="login_from.html" target="_blank" class="btn btn-info">নিবন্ধন করুন</a> </td>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <a href="page-forgot-password.html">Forgot Password?</a>
-                                </div>
                             </div>
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-primary btn-block">Sign Me In</button>
-                            </div>
-                        </form>
-                        <div class="new-account mt-3">
-                            <p>Don't have an account? <a class="text-primary" href="page-register.html">Sign up</a></p>
+                            
+                            
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-            </div>
-        </div>
-    </div>
-<script src="public/vendor/global/global.min.js" type="text/javascript"></script>
-				<script src="public/vendor/bootstrap-select/dist/js/bootstrap-select.min.js" type="text/javascript"></script>
-					<script src="public/js/custom.js" type="text/javascript"></script>
-				<script src="public/js/deznav-init.js" type="text/javascript"></script>
-				<script src="public/js/demo.js" type="text/javascript"></script>
-				<script src="public/js/styleSwitcher.js" type="text/javascript"></script>
-	</body>
+        </div>    
+    </body>
 </html>

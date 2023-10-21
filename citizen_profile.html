@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="robots" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="csrf-token" content="Fsr6GNPiZQyL6yLwdANKyyZBVafWJZziwN1ZlqP7">
+	<meta name="description" content="Some description for the page" />
+	<meta property="og:image" content="../social-image.png" />
+	<meta name="format-detection" content="telephone=no">
+	<title>Citizen porfile</title>
+	<!-- Favicon icon -->
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<link rel="icon" type="image/png" sizes="16x16" href="public/images/favicon.png">
+	<link href="public/vendor/chartist/css/chartist.min.css" rel="stylesheet" type="text/css" />
+	<link href="public/vendor/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+	<link href="public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
+	<link href="public/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="public/css/someStyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<!--*******************
+        Preloader start
+    ********************-->
+	<div id="preloader">
+		<div class="sk-three-bounce">
+			<div class="sk-child sk-bounce1"></div>
+			<div class="sk-child sk-bounce2"></div>
+			<div class="sk-child sk-bounce3"></div>
+		</div>
+	</div>
+	<!--*******************
+        Preloader end
+    ********************-->
+
+
+	<!--**********************************
+        Main wrapper start
+    ***********************************-->
+	<div id="main-wrapper">
+
+		<!--**********************************
+            Nav header start
+        ***********************************-->
+		<div class="nav-header">
+			<a href="index.html" class="brand-logo">
+				<img src="public/images/Untitled-2.jpg" alt="" class="img-fluid">
+			</a>
+
+			<div class="nav-control">
+				<div class="hamburger">
+					<span class="line"></span><span class="line"></span><span class="line"></span>
+				</div>
+			</div>
+		</div>
+		<!--**********************************
+            Nav header end
+        ***********************************-->
+
+		<!--**********************************
+            Header start
+        ***********************************-->
+
+		<!--**********************************
+    Chat box start
+***********************************-->
+		<div class="chatbox">
+			<div class="chatbox-close"></div>
+			<div class="custom-tab-1">
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="tab" href="#notes">Notes</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="tab" href="#alerts">Alerts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" data-bs-toggle="tab" href="#chat">Chat</a>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+		<!--**********************************
+    Chat box End
+***********************************-->
+
+
+
+
+		<!--**********************************
+    Header start
+***********************************-->
+		<div class="header">
+			<div class="header-content">
+				<nav class="navbar navbar-expand">
+					<div class="collapse navbar-collapse justify-content-between">
+						<div class="header-left">
+							<div class="input-group search-area right d-lg-inline-flex d-none">
+								<input type="text" class="form-control" placeholder="Find something here...">
+								<div class="input-group-append">
+									<span class="input-group-text">
+										<a href="javascript:void(0)">
+											<i class="flaticon-381-search-2"></i>
+										</a>
+									</span>
+								</div>
+							</div>
+						</div>
+						<ul class="navbar-nav header-right main-notification">
+							<li class="nav-item dropdown notification_dropdown">
+								<a class="nav-link bell dz-theme-mode" href="#">
+									<i id="icon-light" class="fas fa-sun"></i>
+									<i id="icon-dark" class="fas fa-moon"></i>
+								</a>
+							</li>
+							<li class="nav-item dropdown notification_dropdown">
+								<a class="nav-link bell dz-fullscreen" href="#">
+									<svg id="icon-full" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor"
+										stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+										class="css-i6dzq1">
+										<path
+											d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"
+											style="stroke-dasharray: 37, 57; stroke-dashoffset: 0;"></path>
+									</svg>
+									<svg id="icon-minimize" width="20" height="20" viewBox="0 0 24 24" fill="none"
+										stroke="currentColor" stroke-width="2" stroke-linecap="round"
+										stroke-linejoin="round" class="feather feather-minimize">
+										<path
+											d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"
+											style="stroke-dasharray: 37, 57; stroke-dashoffset: 0;"></path>
+									</svg>
+								</a>
+							</li>
+							
+							<li class="nav-item dropdown header-profile">
+								<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
+									<img src="public/images/profile/pic1.jpg" width="20" alt="" />
+									<div class="header-info">
+										<span>Johndoe</span>
+										<small>Super Admin</small>
+									</div>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="app-profile.html" class="dropdown-item ai-icon">
+										<svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary"
+											width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+											stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+											<circle cx="12" cy="7" r="4"></circle>
+										</svg>
+										<span class="ms-2">Profile </span>
+									</a>
+									<a href="email-inbox.html" class="dropdown-item ai-icon">
+										<svg id="icon-inbox" xmlns="http://www.w3.org/2000/svg" class="text-success"
+											width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+											stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path
+												d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+											</path>
+											<polyline points="22,6 12,13 2,6"></polyline>
+										</svg>
+										<span class="ms-2">Inbox </span>
+									</a>
+									<a href="page-login.html" class="dropdown-item ai-icon">
+										<svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger"
+											width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+											stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+											<polyline points="16 17 21 12 16 7"></polyline>
+											<line x1="21" y1="12" x2="9" y2="12"></line>
+										</svg>
+										<span class="ms-2">Logout </span>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div class="sub-header">
+					<div class="d-flex align-items-center flex-wrap me-auto">
+						<h5 class="dashboard_bar">
+							 </h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--**********************************
+    Header end ti-comment-alt
+***********************************-->
+
+		<!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+		<!--**********************************
+            Sidebar start
+        ***********************************-->
+		<!--**********************************
+	Sidebar start
+***********************************-->
+		<div class="deznav">
+			<div class="deznav-scroll">
+				
+				<ul class="metismenu" id="menu">
+					<li class="nav-label first">Main Menu</li>
+					<li>
+						<a class="" href="index.html" aria-expanded="false">
+							<i class="uil uil-house-user"></i>
+							ড্যাশবোর্ড
+						</a>
+					</li>
+					<li class="nav-label">সেবা বক্স</li>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="flaticon-077-menu-1"></i>
+							<span class="nav-text">Nid Verification</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="nid-register.html">রেজিষ্টার</a></li>
+						</ul>
+				
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-map-pin-alt"></i>
+							<span class="nav-text">প্রতিষ্ঠানের ঠিকানা</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="village-list.html">গ্রামের তালিকা</a></li>
+							<li><a href="postoffice-list.html">পোষ্ট অফিস</a></li>
+							<li><a href="ward-list.html">ওয়ার্ড</a></li>
+							
+						</ul>
+					</li>
+			
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="uil uil-diary"></i>
+							<span class="nav-text">সনদ</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="sonod-list.html">সকল সনদ</a></li>
+							<li><a href="traid.html">ট্রেড লাইসেন্স</a></li>
+							<li><a href="pending-sonod.html">অপেক্ষামান সনদ</a></li>
+						</ul>
+					
+					
+						<!-- <div class="copyright">
+							<p><strong>Digital Up Seba</strong> © 2021 All Rights Reserved</p>
+							<p class="fs-12">Made with <span class="heart"></span> Digital Up Seba</p>
+						</div> -->
+			</div>
+		</div>
+		<!--**********************************
+	Sidebar end
+***********************************-->
+		<!--**********************************
+            Sidebar end
+        ***********************************-->
+
+
+
+		<!--**********************************
+            Content body start
+        ***********************************-->
+		<div class="content-body">
+			<!-- row -->
+			<div class="row p-4">
+				<div class="col-12 col-md-4">
+					<div class="profile-sidebar">
+						<div class="card card-topline-aqua">
+							<div class="card-body no-padding height-9">
+								<div class="row">
+									<div class="profile-userpic">
+										<img src="https://dev.digitalupseba.com/storage/app/DATA/SIGNATUREAPIDATAFILES/PHOTOS/5111616404.jpg"
+											class="img-responsive" alt=""> </div>
+								</div>
+								<div class="profile-usertitle">
+									<h3> মেহেদী হাসান </h3>
+									<div class="profile-usertitle-job"> </div>
+								</div>
+								<ul class="list-group list-group-unbordered">
+									<li class="list-group-item text-muted">
+										<b>পিতা:</b> মৃত শাহ আলম
+									</li>
+									<li class="list-group-item text-muted">
+										<b>মাতা:</b> হাজেরা খাতুন
+									</li>
+									<li class="list-group-item text-muted">
+										<b>ঠিকানা:</b> বাসা/হোল্ডিং: রকু মিয়ার পুরাতন বাড়ী,গ্রাম:
+										আবদুল্যাপুর, ডাকঘর: আলাইয়ারপুর - ৩৮৩১, উপজেলা: বেগমগঞ্জ, জেলা: নোয়াখালী।</li>
+								</ul>
+								<!-- END SIDEBAR USER TITLE -->
+								<!-- SIDEBAR BUTTONS -->
+
+								<!-- END SIDEBAR BUTTONS -->
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-head card-topline-aqua">
+								<h4 class="text-center py-4"> নাগরিক কর্ণার </h4>
+							</div>
+							<div class="card-body no-padding height-9">
+
+								<ul class="list-group list-group-unbordered">
+									<li class="list-group-item text-muted">
+										<b>লিঙ্গ </b>
+										<div class="profile-desc-item pull-right">: পুরুষ</div>
+									</li>
+									<li class="list-group-item text-muted">
+										<b>বয়স </b>
+										<div class="profile-desc-item pull-right">: ৩০</div>
+									</li>
+									<li class="list-group-item text-muted">
+										<b>শিক্ষাগত যোগ্যতা </b>
+										<div class="profile-desc-item pull-right">: B.A., M.A., P.H.D.</div>
+									</li>
+									<li class="list-group-item text-muted">
+										<b>জাতীয় পরিচয় পত্র</b>
+										<div class="profile-desc-item pull-right">: 5111616404</div>
+									</li>
+									<!-- <li class="list-group-item text-muted">
+										<b>স্মাট কার্ড নাম্বার</b>
+										<div class="profile-desc-item pull-right">: 19847510766029112</div>
+									</li> -->
+									<li class="list-group-item text-muted">
+										<b>জন্ম সনদ</b>
+										<div class="profile-desc-item pull-right">: 19847510766029112</div>
+									</li>
+									<li class="list-group-item text-muted">
+										<b>মোবাইল</b>
+										<div class="profile-desc-item pull-right">: 01302-046006</div>
+									</li>
+								</ul>
+
+							</div>
+							
+						</div>
+
+
+					</div>
+					
+				</div>
+				<div class="col-12 col-md-8">
+					<div class="profile-content card">
+						<div class="row">
+							<div class="profile-tab-box">
+								<button data-tab="seven" class="b-nav-tab btn px-2 py-2">
+									প্রোফাইল সেটিং
+								</button>
+
+								<button data-tab="one" class="b-nav-tab active btn px-4 py-2">
+									সনদ আবেদন
+								</button>
+								<button data-tab="two" class="b-nav-tab btn px-2 py-2">
+									মেসেজ
+								</button>
+								<button data-tab="three" class="b-nav-tab btn px-2 py-2">
+									পেন্ডিং আবেদন
+								</button>
+								<button data-tab="four" class="b-nav-tab btn px-2 py-2">
+									সনদ প্রিন্ট
+								</button>
+								<button data-tab="five" class="b-nav-tab btn px-2 py-2">
+									হোল্ডিং ট্যাক্স
+								</button>
+								<button data-tab="six" class="b-nav-tab btn px-2 py-2">
+									পরিবারের সদস্য
+								</button>
+							</div>
+							<div class="white-box">
+								<div id="one" class="b-tab active">
+									<div class="serviceGroup">
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#exampleModal">
+											<div class="serviceItem">
+												<img src="./img/image 4-5.png" alt="" />
+												<li><a href="login_from.html"<b>নাগরিক সনদ</b></a></li>											</div>
+										</button>
+
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#oyarisModal">
+											<div class="serviceItem">
+												<img src="./img/image 4-5.png" alt="" />
+												<li><a href="warish_sonod_from.html"<b>ওয়ারিশ সনদ</b></a></li>
+												<!-- <p>ওয়ারিশ সনদ</p> -->
+											</div>
+											<!-- <div class="serviceMenuItemNext">
+												<a href="./shongtrioUnion.html" class="">
+													<div class="serviceMenuIcon">
+														<i class="uil uil-angle-right-b"></i>
+													</div>
+												</a>
+											</div> -->
+
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example3Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-7.png" alt="" />
+												<li><a href="traid_form.html"<b>ট্রেড লাইসেন্স</b></a></li>
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#exampleModal">
+											<div class="serviceItem">
+												<img src="./img/image 4-8.png" alt="" />
+												<p>চারিত্রিক সনদ</p>
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal" data-target="#dathModal">
+											<div class="serviceItem">
+												<img src="./img/image 4-9.png" alt="" />
+												<li><a href="death_certficate_from.html"<b>মৃত্যু সনদ</b></a></li>
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example6Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-10.png" alt="" />
+												<li><a href="same_name_from.html"<b>একই নামের প্রত্যয়ন</b></a></li>
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example7Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-11.png" alt="" />
+												<p>বাৎসরিক/মাসিক আয়ের প্রত্যয়ন</p>
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example8Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-5.png" alt="" />
+												<li><a href="family_certficate.html"<b>পারিবারিক সনদ</b></a></li>
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example9Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-12.png" alt="" />
+												<p>অবিবাহিত সনদ</p>
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example10Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-13.png" alt="" />
+												<li><a href="unmerid_from.html"<b>পুনঃ বিবাহ না হওয়া</b></a></li>
+												<li><a href="unmerid_from.html"<b>সনদ</b></a></li>
+										</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example11Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-14.png" alt="" />
+												<li><a href="protibondi_from.html"<b>প্রতিবন্ধী সনদ</b></a></li>
+
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example12Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-15.png" alt="" />
+												<p>অনাপত্তি/ক্ষমতা অর্পন পত্র</p>
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example13Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-16.png" alt="" />
+												<li><a href="pottyon_from.html"<b>প্রত্যয়ন পত্র</b></a></li>
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example14Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-17.png" alt="" />
+												<li><a href="voter_transfer_from.html"<b>ভোটার এলাকা স্থানান্তর প্রত্যয়ন</b></a></li>
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example15Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-18.png" alt="" />
+												<li><a href="obokathamo_from.html"<b>অবকাঠামো নির্মানের</b></a></li>
+												<li><a href="obokathamo_from.html"<b>অনুমতি পত্র</b></a></li>
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example16Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4.png" alt="" />
+												<li><a href="land_less_from.html"<b>ভূমিহীন সনদ</b></a></li>
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example17Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-1.png" alt="" />
+												<p>অনুমতি পত্র</p>
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example18Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-2.png" alt="" />
+												<li><a href="nid_correction_from.html"<b>জাতীয় পরিচয়পত্র</b></a></li>
+												<li><a href="nid_correction_from.html"<b>সংশোধন প্রত্যয়ন</b></a></li>
+											</div>
+										</button>
+
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example19Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-3.png" alt="" />
+												<li><a href="new_votar_from.html"<b>নতুন ভোটার প্রত্যযন</b></a></li>
+
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example20Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-4.png" alt="" />
+												<p>নিঃসন্তান প্রত্যয়ন</p>
+											</div>
+
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example21Modal">
+											<!-- <script>
+												var btn = document.getElementById ("example21Modal")
+												var btn = document.getElementById ("popup")
+												btn.oneclick = function () {
+													popUp.style.display"
+												}
+											</script> -->
+											<div class="serviceItem">
+												<img src="./img/image 4-4.png" alt="" />
+												<p>জীবিত থাকার</p>
+												<p>প্রত্যয়ন</p>
+											</div>
+										</button>
+
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example22Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-33.png" alt="" />
+												<li><a href="etim_from.html"<b>এতিম সনদ</b></a></li>
+
+												<!-- <p>এতিম সনদ</p> -->
+												<!-- <p>প্রত্যয়ন</p> -->
+											</div>
+										</button>
+										<button  type="button"  class="btn" data-toggle="modal"
+											data-target="#example23Modal">
+											<div class="serviceItem" >
+												<img src="./img/image 4-32.png" alt="" />
+												<li><a href="fighter_from.html"<b>মুক্তিযোদ্ধা সংক্রান্ত</b></a></li>
+												<li><a href="fighter_from.html"<b>প্রত্যয়ন</b></a></li>
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example24Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-34.png" alt="" />
+												<p>বেকারত্ব সনদ</p>
+												<p></p>
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example25Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-33.png" alt="" />
+												<li><a href="merried_from.html"<b>বিবাহিত সনদ</b></a></li>
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example26Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-31.png" alt="" />
+												<p>কৃষক</p>
+												<p>প্রত্যয়ন</p>
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example27Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-4.png" alt="" />
+												<li><a href="khamar_pottyon.html"<b>খামার প্রত্যয়ন</b></a></li>
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example28Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4.png" alt="" />
+												<p>স্থায়ী বাসিন্দা</p>
+												<p>সনদ</p>
+											</div>
+										</button>
+
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example30Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-4.png" alt="" />
+												<p>রোহিঙ্গা নহে মর্মে</p>
+												<p>প্রত্যয়ন</p>
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example31Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4-4.png" alt="" />
+												<p>সম্প্রদায় সনদ</p>
+												<!-- <p>প্রত্যয়ন</p> -->
+											</div>
+										</button>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example32Modal">
+										<div class="serviceItem">
+											<img src="./img/image 4-15.png" alt="" />
+											<p>বিধবা/স্বামী পরিত্যক্তা</p>
+											<p>প্রত্যয়ন</p>
+										</div>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example33Modal">
+										<div class="serviceItem">
+											<img src="./img/image 4-11.png" alt="" />
+											<p>আর্থিক অস্বচ্ছলতার</p>
+											<p>সনদ</p>
+										</div>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example34Modal">
+										<div class="serviceItem">
+											<img src="./img/image 4-35.png" alt="" />
+											<p>গৃহহীন</p>
+											<p>সনদপত্র</p>
+										</div>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example35Modal">
+										<div class="serviceItem">
+											<img src="./img/image 4-36.png" alt="" />
+											<p>শিক্ষা সংক্রান্ত</p>
+											<p>অঙ্গীকার নামা</p>
+										</div>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example36Modal">
+										<div class="serviceItem">
+											<img src="./img/image 4-37.png" alt="" />
+											<p>নতুন ভোটার</p>
+											<p>অঙ্গীকার নামা</p>
+										</div>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example37Modal">
+										<div class="serviceItem">
+											<img src="./img/image 4-30 .png" alt="" />
+											<li><a href="autoriksha_traid.html"<b>অটোরিকশা/যানবাহন</b></a></li>
+											<li><a href="autoriksha_traid.html"<b>লাইসেন্স</b></a></li>
+										</div>
+										<button type="button" class="btn" data-toggle="modal"
+											data-target="#example28Modal">
+											<div class="serviceItem">
+												<img src="./img/image 4.png" alt="" />
+												<p>নিখোজ সংক্রান্ত</p>
+												<p>প্রত্যয়ন</p>
+											</div>
+										</button>
+
+									</button>
+
+
+									</div>
+								</div>
+								<div id="two" class="b-tab">
+									<div class="full-width p-l-20">
+										<div class="panel">
+											<form>
+												<textarea class="form-control p-text-area" rows="4"
+													placeholder="Whats in your mind today?"></textarea>
+											</form>
+											<footer class="panel-footer mt-3">
+												<button class="btn bg-primary text-white pull-right">Send</button>
+
+											</footer>
+										</div>
+									</div>
+								</div>
+								<div id="three" class="b-tab">
+									<div class="table-wrap">
+										<div class="table-responsive">
+											<table class="table display product-overview mb-30" id="support_table5">
+												<thead>
+													<tr>
+														<th>ক্রমিক </th>
+														<th>আবেদন নং</th>
+														<th>আবেদনের তারিখ </th>
+														<th>নাম</th>
+														<th>পিতার নাম</th>
+														<!-- <th>সনদ নং</th> -->
+														<th>সনদের ধরণ</th>
+														<th>বিস্তারিত</th>
+														<th>আবেদনপত্র প্রিন্ট</th>
+														<th>অনুমোদন</th>
+													</tr>	
+												</thead>
+												<tbody>
+													<tr>
+														<td>১</td>
+														<td>01555</td>
+														<td>০১-০১-২০২৩</td>
+														<td>মেহেদী হাসান</td>
+														<td>মৃত শাহ আলম</td>
+														<td>ওয়ারিশ সনদ</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">view</button></td>
+														<td data-v-ab5f37bc=""><a data-v-ab5f37bc="" href="application_from_warish.html" target="_blank" class="btn btn-info">Print</a> </td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">Active</button></td>
+													</tr>
+													<tr>
+														<td>২</td>
+														<td>01555</td>
+														<td>০১-০১-২০২৩</td>
+														<td>মেহেদী হাসান</td>
+														<td>মৃত শাহ আলম</td>
+														<td>নাগরিক সনদ</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">view</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">print</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">Active</button></td>
+													</tr>
+													<tr>
+														<td>৩</td>
+														<td>01555</td>
+														<td>০১-০১-২০২৩</td>
+														<td>মেহেদী হাসান</td>
+														<td>মৃত শাহ আলম</td>
+														<td>ট্রেড লাইসেন্স</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">view</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">print</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">Active</button></td>
+													</tr>
+													<tr>
+														<td>৪</td>
+														<td>01555</td>
+														<td>০১-০১-২০২৩</td>
+														<td>মেহেদী হাসান</td>
+														<td>মৃত শাহ আলম</td>
+														<td>চারিত্রিক সনদ</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">view</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">print</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">Active</button></td>
+													</tr>
+													<tr>
+														<td>৫</td>
+														<td>01555</td>
+														<td>০১-০১-২০২৩</td>
+														<td>মেহেদী হাসান</td>
+														<td>মৃত শাহ আলম</td>
+														<td>একই নামের প্রত্যয়ন</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">view</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">print</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">Active</button></td>
+													</tr>
+													<tr>
+														<td>৬</td>
+														<td>01555</td>
+														<td>০১-০১-২০২৩</td>
+														<td>মেহেদী হাসান</td>
+														<td>মৃত শাহ আলম</td>
+														<td>বাৎসরিক/মাসিক আয়ের প্রত্যয়ন</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">view</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">print</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">Active</button></td>
+													</tr>
+													<tr>
+														<td>৬</td>
+														<td>01555</td>
+														<td>০১-০১-২০২৩</td>
+														<td>মেহেদী হাসান</td>
+														<td>মৃত শাহ আলম</td>
+														<td>পারিবারিক সনদ</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">view</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">print</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">Active</button></td>
+													</tr>
+													<tr>
+														<td>৬</td>
+														<td>01555</td>
+														<td>০১-০১-২০২৩</td>
+														<td>মেহেদী হাসান</td>
+														<td>মৃত শাহ আলম</td>
+														<td>অবিবাহিত সনদ</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">view</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">print</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">Active</button></td>
+													</tr>
+													<tr>
+														<td>৬</td>
+														<td>01555</td>
+														<td>০১-০১-২০২৩</td>
+														<td>মেহেদী হাসান</td>
+														<td>মৃত শাহ আলম</td>
+														<td>পুনঃ বিবাহ না হওয়ার সনদ</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">view</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">print</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">Active</button></td>
+													</tr>
+													<tr>
+														<td>৬</td>
+														<td>01555</td>
+														<td>০১-০১-২০২৩</td>
+														<td>মেহেদী হাসান</td>
+														<td>মৃত শাহ আলম</td>
+														<td>প্রতিবন্ধী সনদ</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">view</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">print</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">Active</button></td>
+													</tr>
+													<tr>
+														<td>৬</td>
+														<td>01555</td>
+														<td>০১-০১-২০২৩</td>
+														<td>মেহেদী হাসান</td>
+														<td>মৃত শাহ আলম</td>
+														<td>অনাপত্তি/ক্ষমতা অর্পন পত্র</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">view</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">print</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">Active</button></td>
+													</tr>
+													<tr>
+														<td>৬</td>
+														<td>01555</td>
+														<td>০১-০১-২০২৩</td>
+														<td>মেহেদী হাসান</td>
+														<td>মৃত শাহ আলম</td>
+														<td>প্রত্যয়ন পত্র</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">view</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">print</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">Active</button></td>
+													</tr>
+													<tr>
+														<td>৬</td>
+														<td>01555</td>
+														<td>০১-০১-২০২৩</td>
+														<td>মেহেদী হাসান</td>
+														<td>মৃত শাহ আলম</td>
+														<td>ভোটার এলাকা স্থানান্তর প্রত্যয়ন/td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">view</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">print</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">Active</button></td>
+													</tr>
+													<tr>
+														<td>৬</td>
+														<td>01555</td>
+														<td>০১-০১-২০২৩</td>
+														<td>মেহেদী হাসান</td>
+														<td>মৃত শাহ আলম</td>
+														<td>বাৎসরিক/মাসিক আয়ের প্রত্যয়ন</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">view</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">print</button></td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">Active</button></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div id="four" class="b-tab">
+									<div class="table-wrap">
+										<div class="table-responsive">
+											<table class="table display product-overview mb-30" id="support_table5">
+												<thead>
+													<tr>
+														<th>ক্রমিক </th>
+														<th>আবেদনের তারিখ </th>
+														<th>নাম</th>
+														<th>পিতার নাম</th>
+														<th>সনদ নং</th>
+														<th>সনদের ধরণ</th>
+														<th>বিস্তারিত</th>
+														<th>প্রিন্ট</th>
+												</thead>
+												<tbody>
+													<tr>
+														<td>১</td>
+														<td>০১-০১-২০২৩</td>
+														<td>মেহেদী হাসান</td>
+														<td>মৃত শাহ আলম</td>
+														<td>5555</td>
+														<td>নাগরিক সনদ</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">View</button></td>
+														<td data-v-ab5f37bc=""><a data-v-ab5f37bc="" href="https://dev.digitalupseba.com/admin/certificates/others-certificates/1/bn/409" target="_blank" class="btn btn-info">বাং</a> <a data-v-ab5f37bc="" href="https://dev.digitalupseba.com/admin/certificates/others-certificates/1/en/409" target="_blank" class="btn btn-warning">En</a></td>
+													</tr>
+													<tr>
+														<td>২</td>
+														<td>০১-০১-২০২৩</td>
+														<td>মেহেদী হাসান</td>
+														<td>মৃত শাহ আলম</td>
+														<td>5555</td>
+														<td>বার্ষিক আয়ের সনদ</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">View</button></td>
+														<td data-v-ab5f37bc=""><a data-v-ab5f37bc="" href="https://dev.digitalupseba.com/admin/certificates/others-certificates/1/bn/409" target="_blank" class="btn btn-info">বাং</a> <a data-v-ab5f37bc="" href="https://dev.digitalupseba.com/admin/certificates/others-certificates/1/en/409" target="_blank" class="btn btn-warning">En</a></td>
+													</tr>
+													<tr>
+														<td>৩</td>
+														<td>০১-০১-২০২৩</td>
+														<td>মেহেদী হাসান</td>
+														<td>মৃত শাহ আলম</td>
+														<td>5555</td>
+														<td>পারিবারিক সনদ</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">View</button></td>
+														<td data-v-ab5f37bc=""><a data-v-ab5f37bc="" href="https://dev.digitalupseba.com/admin/certificates/others-certificates/1/bn/409" target="_blank" class="btn btn-info">বাং</a> <a data-v-ab5f37bc="" href="https://dev.digitalupseba.com/admin/certificates/others-certificates/1/en/409" target="_blank" class="btn btn-warning">En</a></td>
+													</tr>
+													<tr>
+														<td>৪</td>
+														<td>০১-০১-২০২৩</td>
+														<td>মেহেদী হাসান</td>
+														<td>মৃত শাহ আলম</td>
+														<td>5555</td>
+														<td>মৃত্যু সনদ</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">View</button></td>
+														<td data-v-ab5f37bc=""><a data-v-ab5f37bc="" href="https://dev.digitalupseba.com/admin/certificates/others-certificates/1/bn/409" target="_blank" class="btn btn-info">বাং</a> <a data-v-ab5f37bc="" href="https://dev.digitalupseba.com/admin/certificates/others-certificates/1/en/409" target="_blank" class="btn btn-warning">En</a></td>
+													</tr>
+													<tr>
+														<td>৫</td>
+														<td>০১-০১-২০২৩</td>
+														<td>মেহেদী হাসান</td>
+														<td>মৃত শাহ আলম</td>
+														<td>7510766742374</td>
+														<td>চারিত্রিক সনদ</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">View</button></td>
+														<td data-v-ab5f37bc=""><a data-v-ab5f37bc="" href="https://dev.digitalupseba.com/admin/certificates/others-certificates/1/bn/409" target="_blank" class="btn btn-info">বাং</a> <a data-v-ab5f37bc="" href="https://dev.digitalupseba.com/admin/certificates/others-certificates/1/en/409" target="_blank" class="btn btn-warning">En</a></td>
+													</tr>
+													<tr>
+														<td>৬</td>
+														<td>০১-০১-২০২৩</td>
+														<td>মেহেদী হাসান</td>
+														<td>মৃত শাহ আলম</td>
+														<td>5555</td>
+														<td>নাগরিক সনদ</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">View</button></td>
+														<td data-v-ab5f37bc=""><a data-v-ab5f37bc="" href="https://dev.digitalupseba.com/admin/certificates/others-certificates/1/bn/409" target="_blank" class="btn btn-info">বাং</a> <a data-v-ab5f37bc="" href="https://dev.digitalupseba.com/admin/certificates/others-certificates/1/en/409" target="_blank" class="btn btn-warning">En</a></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div id="five" class="b-tab">
+									<div class="table-wrap">
+										<div class="table-responsive">
+											<table class="table display product-overview mb-30" id="support_table5">
+												<thead>
+													<tr>
+														<th>ক্রমিক </th>
+														<th>ওয়ার্ড </th>
+														<th>গ্রাম</th>
+														<th>ব্যক্তির নাম</th>
+														<th>পিতার নাম</th>
+														<th>বাড়ীর নাম</th>
+														<th>হোল্ডিং নাম্বার</th>
+														<th>বাড়ির ধরণ</th>
+														<th>ধার্য্য ট্যাক্স</th>
+														<th>বকেয়া ট্যাক্স</th>
+														<th>বিস্তারিত</th>
+												</thead>
+												<tbody>
+													<tr>
+														<td>১</td>
+														<td>০৫</td>
+														<td>কুতুবপুর</td>
+														<td>মেহেদী হাসান</td>
+														<td>শাহ আলম</td>
+														<td>রকু মিয়ার পুরাতন বাড়ী</td>
+														<td>১২০</td>
+														<td>চৌচালা</td>
+														<td>২০০</td>
+														<td>৫০০</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">View</button></td>													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div id="six" class="b-tab">
+									<div class="table-wrap">
+										<div class="table-responsive">
+											<table class="table display product-overview mb-30" id="support_table5">
+												<thead>
+													<tr>
+														<th>ক্রমিক</th>
+														<th>নাম</th>
+														<th>পিতা</th>
+														<th>মাতা</th>
+														<th>স্বামী/স্ত্রী</th>
+														<th>বাড়ীর নাম</th>
+														<th>সম্পর্ক</th>
+														<th>বিস্তারিত</th>
+												</thead>
+												<tbody>
+													<tr>
+														<td>১</td>
+														<td>মেহেদী হাসান</td>
+														<td>শাহ আলম</td>
+														<td>হাজেরা খাতুন</td>
+														<td></td>
+														<td>রকু মিয়ার পুরাতন বাড়ী</td>
+														<td>বড় ভাই</td>
+														<td data-v-ab5f37bc=""><button data-v-ab5f37bc="" type="button" class="btn btn-info">View</button></td>													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div id="seven" class="b-tab ">
+									<div class="row form-material">
+
+										<div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">জন্ম সনদ নং <span style="color: red;">  </span></label>
+											<input enavle="disabled" type="text" class="form-control input-default"
+												placeholder=" example 5821639253">
+										</div>
+										<!-- <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">স্মার্ট কার্ড নাম্বার <span style="color: red;">  </span></label>
+											<input enavle="disabled" type="text" class="form-control input-default"
+												placeholder=" example 5821639253">
+										</div> -->
+										<div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">জাতীয় পরিচয় পত্র নং <span style="color: red;">  </span></label>
+											<input enavle="disabled" type="text" class="form-control input-default"
+												placeholder=" example 5821639253">
+										</div>
+
+										<div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">জন্ম তারিখ <span style="color: red;">* </span></label>
+											<input enavle="disabled" type="date" class="form-control input-default"
+												placeholder="সেবাগ্রহিতার নাম">
+										</div>
+										<div class="col-xl-2 col-xxl-6 col-md-2" style="padding-top: 25px;">
+											<button type="submit" class="btn btn-info">যাচাই</button>
+										</div>
+										<div class="col-xl-4 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">পাসপোর্ট নং <span style="color: red;"> </span></label>
+											<input enavle="disabled" type="text" class="form-control input-default"
+												placeholder="পাসপোর্ট নং">
+										</div>
+										<div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label"> নাম বাংলা <span style="color: red;">* </span></label>
+											<input enavle="disabled" type="text" class="form-control input-default"
+												placeholder="সেবাগ্রহিতার নাম">
+										</div>
+										<div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label"> নাম ইংরেজী <span style="color: red;"> </span></label>
+											<input enavle="disabled" type="text" class="form-control input-default"
+												placeholder="সেবাগ্রহিতার নাম">
+										</div>
+										<div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">পিতার নাম বাংলা <span style="color: red;">*</span></label>
+											<input enavle="disabled" type="text" class="form-control input-default"
+												placeholder="পিতার নাম">
+										</div>
+										<div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">পিতার নাম ইংরেজী <span style="color: red;"></span></label>
+											<input enavle="disabled" type="text" class="form-control input-default"
+												placeholder="পিতার নাম">
+										</div>
+										<div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">মাতার নাম বাংলা <span style="color: red;">*</span></label>
+											<input enavle="disabled" type="text" class="form-control input-default" placeholder="মাতার নাম">
+										</div>
+										<div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">মাতার নাম ইংরেজী <span style="color: red;"></span></label>
+											<input enavle="disabled" type="text" class="form-control input-default" placeholder="মাতার নাম">
+										</div>
+
+										<div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">স্বামী/স্ত্রীর নাম বাংলা <span style="color: red;"></span></label>
+											<input enavle="disabled" type="text" class="form-control input-default" placeholder="স্বামী/স্ত্রীর নাম">
+										</div>
+										<div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">স্বামী/স্ত্রীর নাম ইংরেজী <span style="color: red;"></span></label>
+											<input enavle="disabled" type="text" class="form-control input-default" placeholder="স্বামী/স্ত্রীর নাম">
+										</div>
+										<div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">ওয়ার্ড <span style="color: red;">* </span></label>
+											<select data-v-3161f96a="" class="form-control">
+												<option data-v-3161f96a="" value="">
+													ওয়ার্ড
+												</option>
+												<option data-v-3161f96a="">1</option>
+												<option data-v-3161f96a="">2</option>
+											</select>
+										</div>
+										<div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">গ্রাম <span style="color: red;">* </span></label>
+											<select data-v-3161f96a="" class="form-control">
+												<option data-v-3161f96a="" value="">
+													গ্রাম
+												</option>
+												<option data-v-3161f96a="">কুতুবপুর</option>
+												<option data-v-3161f96a="">আবদুল্যাপুর</option>
+											</select>
+										</div>
+										<div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">পোষ্ট অফিস <span style="color: red;">* </span></label>
+											<select data-v-3161f96a="" class="form-control">
+												<option data-v-3161f96a="" value="">
+													পোষ্ট অফিস
+												</option>
+												<option data-v-3161f96a="">কুতুবপুর</option>
+												<option data-v-3161f96a="">আলাইয়ারপুর</option>
+											</select>
+										</div>
+
+										<div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">হোল্ডিং নাম্বার <span style="color: red;"> </span></label>
+											<input enavle="disabled" type="text" class="form-control input-default"
+												placeholder="হোল্ডিং নাম্বার">
+										</div>
+										<div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">লিঙ্গ <span style="color: red;">* </span></label>
+											<select data-v-3161f96a="" class="form-control">
+												<option data-v-3161f96a="" value="">
+													নির্বাচন করুন
+												</option>
+												<option data-v-3161f96a="">পুরুষ</option>
+												<option data-v-3161f96a="">মহিলা</option>
+												<option data-v-3161f96a="">তৃতীয় লিঙ্গ</option>
+
+											</select>
+										</div>
+										<div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">ধর্ম <span style="color: red;">* </span></label>
+											<select data-v-3161f96a="" class="form-control">
+												<option data-v-3161f96a="" value="">
+													নির্বাচন করুন
+												</option>
+												<option data-v-3161f96a="">ইসলাম</option>
+												<option data-v-3161f96a="">সনাতন</option>
+												<option data-v-3161f96a="">খ্রিস্টান</option>
+												<option data-v-3161f96a="">বৌদ্ধ ধর্মাবলম্বী</option>
+												<option data-v-3161f96a="">ক্ষুদ্র জাতিগত গোষ্ঠী</option>
+
+											</select>
+										</div>
+										<div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">বাড়ীর নাম বাংলা <span style="color: red;"> </span></label>
+											<input enavle="disabled" type="text" class="form-control input-default"
+												placeholder="বাড়ীর নাম">
+										</div>
+										<div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">বাড়ীর নাম ইংরেজী <span style="color: red;"> </span></label>
+											<input enavle="disabled" type="text" class="form-control input-default"
+												placeholder="বাড়ীর নাম">
+										</div>
+										<!-- <div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">মিটার নং <span style="color: red;">*</span></label>
+											<input enavle="disabled" type="text" class="form-control input-default"
+												placeholder="মিটার নং">
+										</div> --><div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">রক্তের গ্রুপ <span style="color: red;"> </span></label>
+											<input enavle="disabled" type="text" class="form-control input-default"
+												placeholder="রক্তের গ্রুপ">
+										</div>
+										<div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">বাসিন্দা <span style="color: red;">* </span></label>
+											<select data-v-3161f96a="" class="form-control">
+												<option data-v-3161f96a="" value="">
+													নির্বাচন করুন
+												</option>
+												<option data-v-3161f96a="">স্থায়ী</option>
+												<option data-v-3161f96a="">অ-স্থায়ী</option>
+												<option data-v-3161f96a="">বৈবাহিক সূত্রে</option>
+												<option data-v-3161f96a="">জন্ম সূত্রে</option>
+											</select>
+										</div>
+
+
+										<div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">শিক্ষাগত যোগ্যতা<span style="color: red;"> </span></label>
+											<select data-v-3161f96a="" class="form-control">
+												<option data-v-3161f96a="" value="">
+													নির্বাচন করুন
+												</option>
+												<option data-v-3161f96a="">১ম</option>
+												<option data-v-3161f96a="">২য়</option>
+												<option data-v-3161f96a="">৩য়</option>
+												<option data-v-3161f96a="">৪র্থ</option>
+												<option data-v-3161f96a="">৫ম</option>
+												<!-- <option data-v-3161f96a="">ভিজিএফ</option> -->
+												<!-- <option data-v-3161f96a="">হতদরিদ্র</option> -->
+												<!-- <option data-v-3161f96a="">tcv</option> -->
+												<!-- <option data-v-3161f96a="">ন্যায্য মূলের চাউল</option> -->
+											</select>
+										</div>
+
+										<div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">সরকারি ভাতা <span style="color: red;"> </span></label>
+											<select data-v-3161f96a="" class="form-control">
+												<option data-v-3161f96a="" value="">
+													নির্বাচন করুন
+												</option>
+												<option data-v-3161f96a="">বয়স্ক</option>
+												<option data-v-3161f96a="">বিধবা</option>
+												<option data-v-3161f96a="">প্রতিবন্ধী</option>
+												<option data-v-3161f96a="">মাতৃত্ব</option>
+												<option data-v-3161f96a="">ভিজিডি</option>
+												<option data-v-3161f96a="">ভিজিএফ</option>
+												<option data-v-3161f96a="">হতদরিদ্র</option>
+												<option data-v-3161f96a="">tcv</option>
+												<option data-v-3161f96a="">ন্যায্য মূলের চাউল</option>
+											</select>
+										</div>
+										<div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">বৈবাহিক অবস্থা <span style="color: red;"> </span></label>
+											<select data-v-3161f96a="" class="form-control">
+												<option data-v-3161f96a="" value="">
+													নির্বাচন করুন
+												</option>
+												<option data-v-3161f96a="">বিবাহিত</option>
+												<option data-v-3161f96a="">অবিবাহিত</option>
+												<option data-v-3161f96a="">বিধবা বা বিপত্নীক</option>
+												<option data-v-3161f96a="">তালাকপ্রাপ্ত</option>
+
+											</select>
+										</div>
+
+										<div class="col-xl-2 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">পেশা <span style="color: red;"> </span></label>
+											<select data-v-3161f96a="" class="form-control">
+												<option data-v-3161f96a="" value="">
+													নির্বাচন করুন
+												</option>
+												<option data-v-3161f96a="">সরকারী চাকুরী</option>
+												<option data-v-3161f96a="">বেসরকারী চাকুরী</option>
+												<option data-v-3161f96a="">ডাক্তার</option>
+												<option data-v-3161f96a="">ইঞ্জিনিয়ার</option>
+												<option data-v-3161f96a="">শিক্ষক</option>
+												<option data-v-3161f96a="">ব্যাংকার</option>
+												<option data-v-3161f96a="">ব্যবসা</option>
+												<option data-v-3161f96a="">শ্রমিক</option>
+												<option data-v-3161f96a="">কৃষক</option>
+												<option data-v-3161f96a="">ছাত্র/ছাত্রী</option>
+												<option data-v-3161f96a="">গৃহিনী</option>
+												<option data-v-3161f96a="">দিনমজুর</option>
+												<option data-v-3161f96a="">বেকার</option>
+												<option data-v-3161f96a="">গৃহকর্মী</option>
+												<option data-v-3161f96a="">ধোপা</option>
+												<option data-v-3161f96a="">কামার</option>
+												<option data-v-3161f96a="">কুমার</option>
+												<option data-v-3161f96a="">জেলে</option>
+												<option data-v-3161f96a="">মিস্ত্রী</option>
+												<option data-v-3161f96a="">প্রহরী</option>
+												<option data-v-3161f96a="">তাঁতি</option>
+												<option data-v-3161f96a="">মাঝি</option>
+												<option data-v-3161f96a="">কুলি</option>
+												<option data-v-3161f96a="">মুচি</option>
+												<option data-v-3161f96a="">বাবুর্চী</option>
+												<option data-v-3161f96a="">শিল্পী</option>
+												<option data-v-3161f96a="">হকার</option>
+												<option data-v-3161f96a="">রিক্সা/ভ্যান চালক</option>
+												<option data-v-3161f96a="">বিচারক</option>
+												<option data-v-3161f96a="">নাপিত</option>
+												<option data-v-3161f96a="">দর্জি</option>
+												<option data-v-3161f96a="">কন্ট্রাক্টর</option>
+												<option data-v-3161f96a="">ড্রাইভার</option>
+												<option data-v-3161f96a="">সেবিকা</option>
+												<option data-v-3161f96a="">কৃষিবিদ</option>
+												<option data-v-3161f96a="">সাংবাদিকতা</option>
+												<option data-v-3161f96a="">অবসরপ্রাপ্ত সরকারী চাকুরীজীবী</option>
+												<option data-v-3161f96a="">অবসরপ্রাপ্ত বেসরকারী চাকুরীজীবী</option>
+												<option data-v-3161f96a="">ইমাম/পুরোহিত/পাদ্রী</option>
+												<option data-v-3161f96a="">হেকিম/কবিরাজ</option>
+												<option data-v-3161f96a="">কসাই</option>
+												<option data-v-3161f96a="">অন্যান্য</option>
+												<option data-v-3161f96a="">কন্ঠ শিল্পী</option>
+												<option data-v-3161f96a="">স্থপতি</option>
+											</select>
+										</div>
+										<div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">মোবাইল নাম্বার <span style="color: red;">* </span></label>
+											<input enavle="disabled" type="text" class="form-control input-default"
+												placeholder="মোবাইল নাম্বার">
+										</div>
+										<div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">ইমেইল <span style="color: red;"> </span></label>
+											<input enavle="disabled" type="text" class="form-control input-default"
+												placeholder="ইমেইল">
+										</div>
+
+
+
+										<div class="col-xl-6 col-xxl-6 col-md-6 mb-3">
+											<label class="text-label">ব্যক্তির ছবি <span style="color: red;"> </span></label>
+											<div class="form-group mb-6"><div class="input-group-icon input-group-icon-left"><span class="input-icon input-icon-left"><i class="material-icons prefix"></i></span> <input type="file" id="house_photo" accept="image/*;capture=camera" class="form-control"></div></div>
+										</div>										
+										<!-- <button type="button" class="btn btn-info"> সাবমিট</button></div> -->
+										<div class="col-xl-2 col-xxl-6 col-md-2" style="padding-top: 22px;">
+											<button type="submit" class="btn btn-info">সংরক্ষণ</button>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+			</div>
+		</div>
+	
+			<!--**********************************
+            Content body end
+        ***********************************-->
+
+
+			<!--**********************************
+            Footer start
+        ***********************************-->
+
+			<!--**********************************
+  Footer start
+***********************************-->
+			<div class="footer">
+				<div class="copyright">
+					<p>Copyright © Digital Up Seba &amp; Developed by <a href="https://digitalupseba.com/"
+							target="_blank">Digital Up Seba</a> 2021</p>
+				</div>
+			</div>
+			<!--**********************************
+  Footer end
+***********************************-->
+			<!--**********************************
+            Footer end
+        ***********************************-->
+
+			<!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+			<!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+
+		</div>
+		<!--**********************************
+
+
+
+ 
+		Main wrapper end
+		***********************************-->
+
+		<!--**********************************
+        Scripts
+    ***********************************-->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="public/vendor/global/global.min.js" type="text/javascript"></script>
+		<script src="public/vendor/bootstrap-select/dist/js/bootstrap-select.min.js" type="text/javascript"></script>
+		<script src="public/vendor/chart.js/Chart.bundle.min.js" type="text/javascript"></script>
+		<script src="vendor/peity/jquery.peity.min.js" type="text/javascript"></script>
+		<script src="public/vendor/apexchart/apexchart.js" type="text/javascript"></script>
+		<script src="public/vendor/owl-carousel/owl.carousel.js" type="text/javascript"></script>
+		<script src="public/js/dashboard/dashboard-1.js" type="text/javascript"></script>
+		<script src="public/js/custom.js" type="text/javascript"></script>
+		<script src="public/js/deznav-init.js" type="text/javascript"></script>
+		<script src="public/js/demo.js" type="text/javascript"></script>
+		<script src="public/js/styleSwitcher.js" type="text/javascript"></script>
+
+
+</body>
+
+
+</html>
